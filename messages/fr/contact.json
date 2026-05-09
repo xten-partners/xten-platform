@@ -1,0 +1,26 @@
+{
+  "Contact": {
+    "metaTitle": "Contact — Xten Partners",
+    "metaDescription": "Écrire à Xten Partners pour un échange discret sur un mandat ou un contexte de transformation.",
+    "title": "Contact",
+    "intro": "Pour ouvrir un échange — pas pour « envoyer un lead ».",
+    "name": "Nom",
+    "email": "Courriel professionnel",
+    "organization": "Organisation (optionnel)",
+    "role": "Fonction (optionnel)",
+    "message": "Message",
+    "messageHint": "Indiquez le contexte en quelques lignes. Aucune donnée sensible sur des personnes identifiables n’est nécessaire à ce stade.",
+    "consentRich": "J’accepte que mes informations soient utilisées pour répondre à ma demande, conformément à la <privacy>politique de confidentialité</privacy>.",
+    "consentError": "Veuillez accepter les conditions pour envoyer le message.",
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "success": "Merci. Votre message a été reçu. Nous reviendrons vers vous de manière appropriée au contexte.",
+    "error": "L’envoi a échoué. Vous pouvez réessayer ou nous écrire directement depuis votre messagerie professionnelle.",
+    "validation": {
+      "name": "Indiquez votre nom.",
+      "email": "Indiquez une adresse courriel valide.",
+      "messageShort": "Le message est trop court pour être utile."
+    },
+    "note": "Les données transmises sont traitées pour répondre à votre demande. Aucun profilage publicitaire n’est réalisé. Durée de conservation limitée au traitement de la demande sauf obligation légale contraire."
+  }
+}

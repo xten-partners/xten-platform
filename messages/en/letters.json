@@ -1,0 +1,29 @@
+{
+  "Letters": {
+    "metaTitle": "Correspondence — Xten Partners",
+    "metaDescription": "Correspondence in preparation—plain writing for decisions. First release August 2026.",
+    "title": "Correspondence",
+    "seriesBadge": "Private correspondence",
+    "intro": "Editorial work in progress—not a feed, not thought-leadership theater. Straight lines, operational honesty.",
+    "publicationLine": "Drafting in progress · first letter · August 2026",
+    "previewNote": "Sketches—substantive material, not active publications.",
+    "letterPreviewKicker": "Sketch",
+    "items": {
+      "alignment-before-automation": {
+        "title": "Alignment before automation",
+        "excerpt": "Shared frame before acceleration.",
+        "statusLine": "In preparation · 2026"
+      },
+      "operator-led-transformation": {
+        "title": "Operator-led transformation",
+        "excerpt": "The mandate in the lines.",
+        "statusLine": "In preparation · 2026"
+      },
+      "discretion-judgment": {
+        "title": "Discretion under pressure",
+        "excerpt": "Protect lucidity.",
+        "statusLine": "In preparation · 2026"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "LandingPe": {
+    "metaTitle": "Private equity — Portfolio & exécution",
+    "metaDescription": "Transformation de portefeuille, levier EBITDA, capacité d’exécution, accélération du leadership post-deal.",
+    "title": "Private equity",
+    "lede": "Thèse de valeur et calendrier : le goulot est souvent le leadership qui fait tenir plusieurs lignes — pas la démo technologique.",
+    "body": "Succession, assessment, montée en puissance : là où l’EBITDA dépend de décisions au sommet et d’initiatives qui traversent les lignes sans se disperser.",
+    "closing": "Échange restreint pour cadrer mandat et confidentialité."
+  },
+  "LandingEti": {
+    "metaTitle": "ETI — Goulets & ambiguïté",
+    "metaDescription": "Structures légères, mandat flou, dépendance aux personnes clés — transformation sans organisation projet surdimensionnée.",
+    "title": "ETI & organisations denses",
+    "lede": "Goulets opérationnels non nommés ; brief qui parle d’« IA » avant de dire qui porte quoi.",
+    "body": "Clarifier le mandat quand l’entreprise vit encore de l’informel — puis recruter celui qui peut tenir la friction interne.",
+    "closing": "Premier contact pour voir si le contexte correspond au périmètre."
+  },
+  "LandingTop500": {
+    "metaTitle": "Grandes organisations — Matrice & visibilité",
+    "metaDescription": "Complexité matricielle, sensibilité politique, transformation sous les projecteurs, inertie organisationnelle.",
+    "title": "Grandes organisations",
+    "lede": "La transformation est visible avant d’être réelle : résistance interne, agendas multiples, exposition médiatique.",
+    "body": "Profils exposés, arbitrages au comité : leadership qui tient la politique sans sacrifier l’exécution.",
+    "closing": "Qualifier le fit avec une pratique à volume limité."
+  },
+  "LandingInternational": {
+    "metaTitle": "Filiales — Siège & terrain",
+    "metaDescription": "Ambition HQ contre réalité locale, traduction opérationnelle, alignement européen.",
+    "title": "Filiales internationales",
+    "lede": "Sans mandat traduit au niveau qui exécute, la directive reste symbolique.",
+    "body": "Europe multi-contextes : responsabilités, langues de décision, crédibilité locale.",
+    "closing": "Clarifier périmètre et niveau d’autonomie réel."
+  }
+}

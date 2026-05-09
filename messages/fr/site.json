@@ -1,0 +1,44 @@
+{
+  "Metadata": {
+    "siteName": "Xten Partners",
+    "defaultDescription": "Définition des mandats de transformation et leadership search à l’ère de l’IA — expertise étroite, volume limité."
+  },
+  "Nav": {
+    "home": "Accueil",
+    "contexts": "Contextes",
+    "about": "À propos",
+    "letters": "Correspondance",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menuTitle": "Menu"
+  },
+  "Footer": {
+    "sectionContexts": "Contextes",
+    "sectionInfo": "Informations",
+    "tagline": "Pratique de mandats : rôles, exécution, transformation organisationnelle — accompagnement choisi, confidentiel.",
+    "contextsOverview": "Vue d’ensemble des contextes",
+    "privateEquity": "Private equity",
+    "eti": "ETI",
+    "top500": "Grandes entreprises",
+    "internationalSubsidiaries": "Filiales internationales",
+    "privacy": "Confidentialité",
+    "terms": "Mentions légales",
+    "rights": "Tous droits réservés."
+  },
+  "CookieConsent": {
+    "title": "Cookies et mesure d’audience",
+    "description": "Nous utilisons uniquement des cookies nécessaires au fonctionnement du site. Aucun traceur publicitaire n’est activé par défaut. Vous pouvez ajuster vos préférences à tout moment.",
+    "essential": "Continuer (essentiel uniquement)",
+    "learnMore": "Politique de confidentialité"
+  },
+  "Common": {
+    "readMore": "Lire la suite",
+    "backToLetters": "Retour à la correspondance",
+    "startConversation": "Ouvrir une conversation",
+    "readLetters": "Lire la correspondance",
+    "contactUs": "Nous contacter",
+    "continueReading": "Voir l’aperçu",
+    "exchangeShort": "Échanger"
+  }
+}

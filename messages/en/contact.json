@@ -1,0 +1,26 @@
+{
+  "Contact": {
+    "metaTitle": "Contact — Xten Partners",
+    "metaDescription": "Write to Xten Partners to begin a discreet conversation about a mandate or transformation context.",
+    "title": "Contact",
+    "intro": "To open an exchange—not to send a lead.",
+    "name": "Name",
+    "email": "Work email",
+    "organization": "Organization (optional)",
+    "role": "Role (optional)",
+    "message": "Message",
+    "messageHint": "Outline the context in a few lines. No sensitive personal data is required at this stage.",
+    "consentRich": "I agree that my information may be used to respond to my request, in line with the <privacy>privacy policy</privacy>.",
+    "consentError": "Please accept the terms to send your message.",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Thank you. Your message was received. We will respond in a manner appropriate to the context.",
+    "error": "Submission failed. You may retry or write to us directly from your work email.",
+    "validation": {
+      "name": "Please provide your name.",
+      "email": "Please provide a valid email address.",
+      "messageShort": "The message is too short to be useful."
+    },
+    "note": "Information submitted is processed to respond to your request. No advertising profiling is performed. Retention is limited to handling the request unless law requires otherwise."
+  }
+}

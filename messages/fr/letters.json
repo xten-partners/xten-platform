@@ -1,0 +1,29 @@
+{
+  "Letters": {
+    "metaTitle": "Correspondance — Xten Partners",
+    "metaDescription": "Correspondance en préparation — textes sobres, utiles à la décision. Première livraison août 2026.",
+    "title": "Correspondance",
+    "seriesBadge": "Correspondance privée",
+    "intro": "Travail éditorial en cours — pas un flux, pas une vitrine « thought leadership ». Lignes directes, honnêteté opérationnelle.",
+    "publicationLine": "Rédaction en cours · première lettre · août 2026",
+    "previewNote": "Esquisses — matière de fond, pas publications actives.",
+    "letterPreviewKicker": "Esquisse",
+    "items": {
+      "alignment-before-automation": {
+        "title": "L’alignement avant l’automatisation",
+        "excerpt": "Le cadre commun avant l’accélération.",
+        "statusLine": "En préparation · 2026"
+      },
+      "operator-led-transformation": {
+        "title": "La transformation portée par l’opérateur",
+        "excerpt": "Le mandat dans les lignes.",
+        "statusLine": "En préparation · 2026"
+      },
+      "discretion-judgment": {
+        "title": "Discrétion sous pression",
+        "excerpt": "Préserver la lucidité.",
+        "statusLine": "En préparation · 2026"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "Privacy": {
+    "metaTitle": "Privacy policy — Xten Partners",
+    "metaDescription": "How Xten Partners processes personal data on this website (GDPR-oriented framework).",
+    "title": "Privacy policy",
+    "updated": "Last updated: 9 May 2026",
+    "sections": [
+      {
+        "heading": "1. Data controller",
+        "body": "Xten Partners (“we”) is the controller for the processing described here for data collected through this website. Full contact details: [to complete — legal name, address, DPO or privacy contact]."
+      },
+      {
+        "heading": "2. Data collected",
+        "body": "We collect information you voluntarily submit via the contact form: name, work email, organization, role, and message content. Minimal technical logs may be retained by our hosting provider for security purposes."
+      },
+      {
+        "heading": "3. Purposes and legal bases",
+        "body": "Data is processed to respond to your inquiry (pre-contractual measures / legitimate interest in a B2B context). No broad commercial prospecting is conducted without a separate legal basis."
+      },
+      {
+        "heading": "4. Retention",
+        "body": "Messages are kept only as long as needed to handle the request and meet legal obligations, then deleted or anonymized according to internal procedures."
+      },
+      {
+        "heading": "5. Recipients",
+        "body": "Data is accessible to authorized personnel at Xten Partners and, where applicable, technical subprocessors (hosting, email) bound by confidentiality and security obligations."
+      },
+      {
+        "heading": "6. International transfers",
+        "body": "If transfers outside the EU occur, they rely on EU Commission standard contractual clauses or an equivalent mechanism."
+      },
+      {
+        "heading": "7. Your rights",
+        "body": "You have rights of access, rectification, erasure, restriction, objection, and portability as provided under the GDPR. You may lodge a complaint with your supervisory authority."
+      },
+      {
+        "heading": "8. Cookies",
+        "body": "Only cookies strictly necessary for site operation are set by default. Any additional analytics will be enabled only with explicit consent where required."
+      }
+    ]
+  },
+  "Terms": {
+    "metaTitle": "Legal notices — Xten Partners",
+    "metaDescription": "Legal notices and terms of use for the Xten Partners website.",
+    "title": "Legal notices",
+    "updated": "Last updated: 9 May 2026",
+    "sections": [
+      {
+        "heading": "1. Publisher",
+        "body": "[To complete — legal name, corporate form, registered office, registration numbers, VAT ID, legal representative.]"
+      },
+      {
+        "heading": "2. Hosting",
+        "body": "The site is hosted on Vercel Inc. infrastructure with industry-standard security practices. Subprocessors may change; an updated list is available on request."
+      },
+      {
+        "heading": "3. Intellectual property",
+        "body": "Content (text, structure, visual elements) is protected. Unauthorized reproduction is prohibited except as allowed by law."
+      },
+      {
+        "heading": "4. Use of the site",
+        "body": "Use is intended in a professional context. You agree not to compromise site security or submit unlawful content through forms."
+      },
+      {
+        "heading": "5. Limitation of liability",
+        "body": "Information is provided for general orientation. It does not constitute legal, tax, or financial advice. Xten Partners is not liable for decisions based solely on this content."
+      },
+      {
+        "heading": "6. Governing law",
+        "body": "These notices are governed by [to specify] law. Disputes fall under the jurisdiction of [to specify], subject to mandatory rules of public policy."
+      }
+    ]
+  }
+}

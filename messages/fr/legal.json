@@ -1,0 +1,74 @@
+{
+  "Privacy": {
+    "metaTitle": "Politique de confidentialité — Xten Partners",
+    "metaDescription": "Informations sur le traitement des données personnelles sur le site Xten Partners (cadre RGPD).",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 9 mai 2026",
+    "sections": [
+      {
+        "heading": "1. Responsable du traitement",
+        "body": "Xten Partners (ci-après « nous ») est responsable des traitements décrits dans cette politique pour les données collectées via ce site web. Coordonnées détaillées : [à compléter — dénomination sociale, adresse, contact DPO ou référent]."
+      },
+      {
+        "heading": "2. Données collectées",
+        "body": "Nous collectons les données que vous nous transmettez volontairement via le formulaire de contact : nom, adresse électronique professionnelle, organisation, fonction et contenu du message. Des journaux techniques minimaux peuvent être conservés par notre hébergeur à des fins de sécurité."
+      },
+      {
+        "heading": "3. Finalités et bases légales",
+        "body": "Vos données sont traitées pour répondre à votre demande (exécution de mesures précontractuelles / intérêt légitime dans un cadre B2B). Aucune prospection commerciale généralisée n’est réalisée sans base distincte."
+      },
+      {
+        "heading": "4. Durée de conservation",
+        "body": "Les messages sont conservés le temps nécessaire au traitement de la demande et aux obligations légales applicables, puis effacés ou anonymisés selon nos procédures internes."
+      },
+      {
+        "heading": "5. Destinataires",
+        "body": "Les données sont accessibles aux personnes habilitées au sein de Xten Partners et, le cas échéant, à nos sous-traitants techniques (hébergement, messagerie) soumis à des obligations contractuelles de confidentialité et de sécurité."
+      },
+      {
+        "heading": "6. Transferts hors UE",
+        "body": "Si des transferts internationaux sont nécessaires, ils s’effectuent sur la base de clauses contractuelles types de la Commission européenne ou d’un mécanisme équivalent."
+      },
+      {
+        "heading": "7. Vos droits",
+        "body": "Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité dans les conditions prévues par le RGPD. Vous pouvez introduire une réclamation auprès de l’autorité de contrôle compétente (en France, la CNIL)."
+      },
+      {
+        "heading": "8. Cookies",
+        "body": "Seuls des cookies strictement nécessaires au fonctionnement du site sont déposés par défaut. Tout outil de mesure d’audience additionnel ne sera activé qu’avec votre consentement explicite, le cas échéant."
+      }
+    ]
+  },
+  "Terms": {
+    "metaTitle": "Mentions légales — Xten Partners",
+    "metaDescription": "Mentions légales et conditions générales d’utilisation du site Xten Partners.",
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour : 9 mai 2026",
+    "sections": [
+      {
+        "heading": "1. Éditeur du site",
+        "body": "[À compléter — raison sociale, forme juridique, capital social, siège social, RCS, TVA intracommunautaire, représentant légal.]"
+      },
+      {
+        "heading": "2. Hébergement",
+        "body": "Le site est hébergé par Vercel Inc. et des infrastructures conformes aux standards de sécurité courants. Les sous-traitants peuvent évoluer ; la liste actualisée est disponible sur demande."
+      },
+      {
+        "heading": "3. Propriété intellectuelle",
+        "body": "Les contenus (textes, structure, éléments graphiques) sont protégés. Toute reproduction non autorisée est interdite sauf exceptions légales."
+      },
+      {
+        "heading": "4. Utilisation du site",
+        "body": "L’utilisation du site est réservée à un cadre professionnel. Vous vous engagez à ne pas compromettre la sécurité du site ni à introduire de contenu illicite via les formulaires."
+      },
+      {
+        "heading": "5. Limitation de responsabilité",
+        "body": "Les informations publiées le sont à titre informatif. Elles ne constituent pas un conseil juridique, fiscal ou financier. Xten Partners ne saurait être tenue responsable d’une décision prise uniquement sur la base de ces contenus."
+      },
+      {
+        "heading": "6. Droit applicable",
+        "body": "Les présentes mentions sont soumises au droit [à préciser]. Les litiges relèvent de la compétence des juridictions [à préciser], sous réserve des dispositions d’ordre public."
+      }
+    ]
+  }
+}

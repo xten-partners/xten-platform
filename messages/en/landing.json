@@ -1,0 +1,34 @@
+{
+  "LandingPe": {
+    "metaTitle": "Private equity — Portfolio & execution",
+    "metaDescription": "Portfolio transformation, EBITDA leverage, execution capability, leadership acceleration post-deal.",
+    "title": "Private equity",
+    "lede": "Value thesis and tempo: the bottleneck is often leadership that holds multiple lines—not technology demos.",
+    "body": "Succession, assessment, scaling: where EBITDA depends on top decisions and initiatives that cross lines without fragmenting.",
+    "closing": "Constrained exchange to frame mandate and confidentiality."
+  },
+  "LandingEti": {
+    "metaTitle": "Mid-market — Bottlenecks & ambiguity",
+    "metaDescription": "Light structures, fuzzy mandate, key-person dependency—transformation without an oversized project apparatus.",
+    "title": "Dense organizations",
+    "lede": "Operational bottlenecks unnamed; briefs that say “AI” before naming who owns what.",
+    "body": "Clarify mandate when the firm still runs informally—then hire who can hold internal friction.",
+    "closing": "First contact to see if context fits the scope."
+  },
+  "LandingTop500": {
+    "metaTitle": "Large enterprises — Matrix & visibility",
+    "metaDescription": "Matrix complexity, political sensitivity, transformation in the spotlight, organizational inertia.",
+    "title": "Large enterprises",
+    "lede": "Transformation is visible before it is real: internal resistance, competing agendas, media exposure.",
+    "body": "High-exposure profiles, committee trade-offs: leadership that holds politics without sacrificing execution.",
+    "closing": "Qualify fit with a limited-volume practice."
+  },
+  "LandingInternational": {
+    "metaTitle": "Subsidiaries — HQ & field",
+    "metaDescription": "HQ ambition versus local truth, operating translation, European alignment complexity.",
+    "title": "International subsidiaries",
+    "lede": "Without a mandate translated where execution lives, the directive stays symbolic.",
+    "body": "Multi-context Europe: accountability, decision languages, local credibility.",
+    "closing": "Clarify scope and real autonomy."
+  }
+}
