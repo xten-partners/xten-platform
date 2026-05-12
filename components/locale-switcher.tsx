@@ -26,10 +26,10 @@ export function LocaleSwitcher({ className }: { className?: string }) {
             href={pathname}
             locale={loc}
             className={cn(
-              "rounded-md px-2 py-1 transition-colors",
+              "rounded-md px-2 py-1 transition-colors duration-200",
               isActive
-                ? "bg-muted text-foreground"
-                : "hover:bg-muted/60 hover:text-foreground",
+                ? "bg-foreground/[0.08] text-foreground"
+                : "hover:bg-muted/70 hover:text-foreground",
             )}
             hrefLang={loc}
             lang={loc}

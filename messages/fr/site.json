@@ -1,29 +1,21 @@
 {
   "Metadata": {
     "siteName": "Xten Partners",
-    "defaultDescription": "Définition des mandats de transformation et leadership search à l’ère de l’IA — expertise étroite, volume limité."
+    "defaultDescription": "Transformation organisationnelle, mandats sensibles, leadership sous pression — cabinet discret."
   },
   "Nav": {
-    "home": "Accueil",
-    "contexts": "Contextes",
-    "about": "À propos",
-    "letters": "Correspondance",
+    "services": "Services",
+    "cabinet": "Le cabinet",
     "contact": "Contact",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "menuTitle": "Menu"
   },
   "Footer": {
-    "sectionContexts": "Contextes",
-    "sectionInfo": "Informations",
-    "tagline": "Pratique de mandats : rôles, exécution, transformation organisationnelle — accompagnement choisi, confidentiel.",
-    "contextsOverview": "Vue d’ensemble des contextes",
-    "privateEquity": "Private equity",
-    "eti": "ETI",
-    "top500": "Grandes entreprises",
-    "internationalSubsidiaries": "Filiales internationales",
+    "tagline": "Mandats sensibles | Sélection rigoureuse",
     "privacy": "Confidentialité",
     "terms": "Mentions légales",
+    "cookies": "Cookies",
     "rights": "Tous droits réservés."
   },
   "CookieConsent": {
@@ -34,9 +26,9 @@
   },
   "Common": {
     "readMore": "Lire la suite",
-    "backToLetters": "Retour à la correspondance",
+    "backToLetters": "Retour aux lettres",
     "startConversation": "Ouvrir une conversation",
-    "readLetters": "Lire la correspondance",
+    "readLetters": "Lire les lettres",
     "contactUs": "Nous contacter",
     "continueReading": "Voir l’aperçu",
     "exchangeShort": "Échanger"

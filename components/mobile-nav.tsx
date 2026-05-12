@@ -30,18 +30,18 @@ export function MobileNav({ items }: { items: NavItem[] }) {
           <MenuIcon className="size-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[min(100%,20rem)]">
+      <SheetContent side="right" className="w-[min(100%,20rem)] border-border/60 bg-background">
         <SheetHeader>
           <SheetTitle className="text-left font-heading text-lg font-normal tracking-tight">
             {t("menuTitle")}
           </SheetTitle>
         </SheetHeader>
-        <nav className="mt-8 flex flex-col gap-1" aria-label="Mobile">
+        <nav className="mt-8 flex flex-col gap-0.5" aria-label="Mobile">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-3 text-base text-foreground hover:bg-muted"
+              className="rounded-md px-3 py-3 text-[13px] font-medium uppercase tracking-[0.14em] text-muted-foreground transition-colors duration-200 hover:bg-muted/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               {item.label}
             </Link>

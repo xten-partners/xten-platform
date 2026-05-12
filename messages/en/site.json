@@ -1,42 +1,34 @@
 {
   "Metadata": {
     "siteName": "Xten Partners",
-    "defaultDescription": "Defining transformation mandates and leadership search in the AI era—narrow expertise, limited volume."
+    "defaultDescription": "Organizational transformation, sensitive mandates, leadership under pressure — discreet practice."
   },
   "Nav": {
-    "home": "Home",
-    "contexts": "Contexts",
-    "about": "About",
-    "letters": "Correspondence",
+    "services": "Services",
+    "cabinet": "The firm",
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "menuTitle": "Menu"
   },
   "Footer": {
-    "sectionContexts": "Contexts",
-    "sectionInfo": "Information",
-    "tagline": "A mandate practice: roles, execution, organizational transformation—chosen, confidential work.",
-    "contextsOverview": "Contexts overview",
-    "privateEquity": "Private equity",
-    "eti": "Mid-market",
-    "top500": "Large enterprises",
-    "internationalSubsidiaries": "International subsidiaries",
+    "tagline": "Sensitive mandates | Rigorous selection",
     "privacy": "Privacy",
-    "terms": "Legal",
+    "terms": "Legal notice",
+    "cookies": "Cookies",
     "rights": "All rights reserved."
   },
   "CookieConsent": {
-    "title": "Cookies and analytics",
-    "description": "We use only cookies required for the site to function. No advertising trackers are enabled by default. You can adjust preferences at any time.",
+    "title": "Cookies and audience measurement",
+    "description": "We use only cookies necessary for the site to function. No advertising trackers are enabled by default. You can adjust preferences at any time.",
     "essential": "Continue (essential only)",
     "learnMore": "Privacy policy"
   },
   "Common": {
     "readMore": "Read more",
-    "backToLetters": "Back to correspondence",
-    "startConversation": "Open a conversation",
-    "readLetters": "Read the correspondence",
+    "backToLetters": "Back to letters",
+    "startConversation": "Start a conversation",
+    "readLetters": "Read the letters",
     "contactUs": "Contact us",
     "continueReading": "View preview",
     "exchangeShort": "Exchange"

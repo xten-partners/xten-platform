@@ -18,6 +18,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     legal,
     landing,
     contextes,
+    services,
+    cabinet,
   ] = await Promise.all([
     import(`../messages/${locale}/site.json`),
     import(`../messages/${locale}/home.json`),
@@ -28,6 +30,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`../messages/${locale}/legal.json`),
     import(`../messages/${locale}/landing.json`),
     import(`../messages/${locale}/contextes.json`),
+    import(`../messages/${locale}/services.json`),
+    import(`../messages/${locale}/cabinet.json`),
   ]);
 
   return {
@@ -42,6 +46,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...legal.default,
       ...landing.default,
       ...contextes.default,
+      ...services.default,
+      ...cabinet.default,
     },
   };
 });

@@ -55,9 +55,9 @@ export function CookieConsent() {
       role="dialog"
       aria-labelledby="cookie-consent-title"
       aria-live="polite"
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 p-4 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] backdrop-blur-md supports-backdrop-filter:bg-background/90 md:p-6"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-background/95 p-4 shadow-[0_-6px_28px_oklch(0.35_0.04_38/0.08)] backdrop-blur-md supports-backdrop-filter:bg-background/92 md:p-6"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-8">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-8">
         <div className="max-w-xl">
           <p
             id="cookie-consent-title"
@@ -69,7 +69,7 @@ export function CookieConsent() {
             {t("description")}
           </p>
           <Link
-            href="/privacy"
+            href="/privacy#cookies"
             className="mt-3 inline-block text-sm font-medium text-foreground underline-offset-4 hover:underline"
           >
             {t("learnMore")}

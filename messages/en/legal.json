@@ -35,7 +35,8 @@
       },
       {
         "heading": "8. Cookies",
-        "body": "Only cookies strictly necessary for site operation are set by default. Any additional analytics will be enabled only with explicit consent where required."
+        "body": "Only cookies strictly necessary for site operation are set by default. Any additional analytics will be enabled only with explicit consent where required.",
+        "id": "cookies"
       }
     ]
   },

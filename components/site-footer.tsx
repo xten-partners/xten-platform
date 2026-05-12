@@ -3,81 +3,24 @@ import { Link } from "@/i18n/navigation";
 
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
-  const tNav = await getTranslations("Nav");
   const year = new Date().getFullYear();
 
-  const landing = [
-    { href: "/private-equity", label: t("privateEquity") },
-    { href: "/eti", label: t("eti") },
-    { href: "/top500", label: t("top500") },
-    { href: "/international-subsidiaries", label: t("internationalSubsidiaries") },
-  ];
-
   return (
-    <footer className="mt-auto border-t border-border bg-muted/30">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-          {t("tagline")}
-        </p>
-        <div className="mt-10 grid gap-10 sm:grid-cols-2">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-              {t("sectionContexts")}
-            </p>
-            <ul className="mt-4 space-y-2">
-              <li>
-                <Link
-                  href="/contextes"
-                  className="text-sm text-foreground underline-offset-4 hover:underline"
-                >
-                  {t("contextsOverview")}
-                </Link>
-              </li>
-              {landing.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-foreground underline-offset-4 hover:underline"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-              {t("sectionInfo")}
-            </p>
-            <ul className="mt-4 space-y-2">
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-sm text-foreground underline-offset-4 hover:underline"
-                >
-                  {t("privacy")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-sm text-foreground underline-offset-4 hover:underline"
-                >
-                  {t("terms")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-sm text-foreground underline-offset-4 hover:underline"
-                >
-                  {tNav("contact")}
-                </Link>
-              </li>
-            </ul>
-          </div>
+    <footer className="mt-auto border-t border-border/60 bg-muted/20">
+      <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+        <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">{t("tagline")}</p>
+        <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[12px] font-medium uppercase tracking-[0.14em]">
+          <Link href="/privacy" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+            {t("privacy")}
+          </Link>
+          <Link href="/terms" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+            {t("terms")}
+          </Link>
+          <Link href="/privacy#cookies" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+            {t("cookies")}
+          </Link>
         </div>
-        <p className="mt-12 text-xs text-muted-foreground">
+        <p className="mt-8 text-xs text-muted-foreground">
           © {year} — {t("rights")}
         </p>
       </div>

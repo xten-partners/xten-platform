@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
 
-type LegalSection = { heading: string; body: string };
+type LegalSection = { heading: string; body: string; id?: string };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -30,7 +30,7 @@ export default async function PrivacyPage({ params }: Props) {
       <p className="mt-3 text-sm text-muted-foreground">{t("updated")}</p>
       <div className="mt-12 space-y-12">
         {sections.map((section) => (
-          <section key={section.heading}>
+          <section key={section.heading} id={section.id}>
             <h2 className="font-heading text-xl font-medium tracking-tight text-foreground">
               {section.heading}
             </h2>

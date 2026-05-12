@@ -1,0 +1,64 @@
+{
+  "Services": {
+    "metaTitle": "Services — Xten Partners",
+    "metaDescription": "Cadre commercial discret : diagnostics, executive search retained, sparring direction, participation conseil & gouvernance.",
+    "title": "Services",
+    "lede": "Transparence utile — sans brochure. Les montants sont des ordres de grandeur ; le cadrage définitif se fixe au mandat.",
+    "s01Quote": "« Avant l’outil : la carte du pouvoir et du rythme. »",
+    "s01Title": "01 — Strategic Diagnostic",
+    "s01Scope": "Cartographie courte du mandat implicite : décisions, propriété du changement, goulots humains, exposition publique. Livrable sobres : synthèse exécutive et arbitrages recommandés — pas un slide-deck.",
+    "s01Duration": "3 à 5 semaines selon accès et périmètre.",
+    "s01PricingLead": "Honoraires forfaitaires, calibrés au périmètre.",
+    "s01PricingRows": [
+      { "label": "Périmètre direction / BU unique", "value": "à partir de 28 000 € HT" },
+      { "label": "Groupe multi-BU ou international restreint", "value": "sur devis" }
+    ],
+    "s01Mechanics": "Entretiens ciblés, lecture documentaire sélective, restitution en séance de direction.",
+    "s01Guarantee": "Aucune promesse de « roadmap IA ». Engagement de clarté : ce qui est jouable, sous quelle propriété, à quel horizon.",
+    "s01Payment": "40 % à l’engagement, solde à restitution.",
+    "s02Quote": "« Le mandat avant la longliste. »",
+    "s02Title": "02 — Executive Search Retained",
+    "s02Scope": "Définition du rôle opératoire, critères d’évaluation, marché ciblé, approche confidentielle, shortlist qualifiée, suivi jusqu’à l’arbitrage final.",
+    "s02Duration": "12 à 20 semaines selon niveau et marché.",
+    "s02PricingLead": "Honoraires en succès minoritaires ; base forfaitaire majoritaire.",
+    "s02PricingRows": [
+      { "label": "Forfait de mission (acompte non remboursable)", "value": "à partir de 45 000 € HT" },
+      { "label": "Succès à la prise de poste", "value": "calibré sur rémunération cible — barème au mandat" }
+    ],
+    "s02Mechanics": "Retained exclusif sur le périmètre défini ; pas de chasse parallèle sur le même mandat.",
+    "s02Guarantee": "Garantie de remplacement limitée dans le temps — conditions écrites au contrat.",
+    "s02Payment": "Acompte à l’ouverture, échéances à jalons, solde à la prise de poste.",
+    "s03Quote": "« Un espace pour trancher sans audience. »",
+    "s03Title": "03 — Transition Partner",
+    "s03Scope": "Sessions resserrées avec le sommet : arbitrages, angles morts, tempo politique, préparation de décisions sensibles. Hors « coaching de performance » générique.",
+    "s03Duration": "6 à 12 mois, rythme mensuel ou bimensuel.",
+    "s03PricingLead": "Abonnement forfaitaire mensuel.",
+    "s03PricingRows": [
+      { "label": "Mandat standard (1 dirigeant)", "value": "8 000 à 12 000 € HT / mois" },
+      { "label": "Mandat élargi (comité restreint)", "value": "sur devis" }
+    ],
+    "s03Mechanics": "Agenda fixe, durée maîtrisée, confidentialité contractuelle.",
+    "s03Guarantee": "Pas de livrable décoratif : décisions et points de vigilance documentés si utile au client.",
+    "s03Payment": "Mensuel, échéance fin de mois.",
+    "s04Quote": "« Au niveau où l’arbitrage devient public — et durable. »",
+    "s04Title": "04 — Board & Governance Participation",
+    "s04Scope": "Participation en conseil ou comités stratégiques : cadrage des enjeux IA et transformation, vigilance sur les arbitrages, apports ciblés sans ingérence dans la direction exécutive.",
+    "s04Duration": "Mandat aligné sur le calendrier du conseil — typiquement 12 à 36 mois.",
+    "s04PricingLead": "Honoraires calibrés au périmètre (membre indépendant, expert de comité, mandat ponctuel).",
+    "s04PricingRows": [
+      { "label": "Participation conseil / comité (mandat cadré)", "value": "sur devis" },
+      { "label": "Préparation de sessions ou dossiers spécifiques", "value": "forfait ou journalier" }
+    ],
+    "s04Mechanics": "Lettre de mission claire, déclarations d’indépendance et de conflits d’intérêts, rythme aligné sur le calendrier du conseil.",
+    "s04Guarantee": "Pas de double rôle ambigu : périmètre, transparence et déontologie assumés.",
+    "s04Payment": "Selon mandat : annuel, trimestriel ou jalons aux séances.",
+    "labels": {
+      "scope": "Périmètre",
+      "duration": "Durée indicative",
+      "pricing": "Tarification",
+      "mechanics": "Mécanique",
+      "guarantee": "Garantie / engagement",
+      "payment": "Paiement"
+    }
+  }
+}

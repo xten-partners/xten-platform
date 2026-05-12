@@ -35,7 +35,8 @@
       },
       {
         "heading": "8. Cookies",
-        "body": "Seuls des cookies strictement nécessaires au fonctionnement du site sont déposés par défaut. Tout outil de mesure d’audience additionnel ne sera activé qu’avec votre consentement explicite, le cas échéant."
+        "body": "Seuls des cookies strictement nécessaires au fonctionnement du site sont déposés par défaut. Tout outil de mesure d’audience additionnel ne sera activé qu’avec votre consentement explicite, le cas échéant.",
+        "id": "cookies"
       }
     ]
   },
