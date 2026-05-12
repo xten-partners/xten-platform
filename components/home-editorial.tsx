@@ -126,6 +126,20 @@ export function HomeEditorial() {
 
       <HomeCaiRoleSection />
 
+      <section className="border-b border-border/60 py-20 sm:py-28">
+        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+          <EditorialFadeIn>
+            <p className="text-left text-[10px] font-medium uppercase tracking-[0.26em] text-muted-foreground sm:text-[11px]">
+              {t("experiencesSectionTitle")}
+            </p>
+            <div className="mt-8 max-w-3xl space-y-6 text-left text-base leading-[1.82] text-muted-foreground sm:mt-10 sm:text-lg sm:leading-[1.78]">
+              <p>{t("experiencesBody1")}</p>
+              <p>{t("experiencesBody2")}</p>
+            </div>
+          </EditorialFadeIn>
+        </div>
+      </section>
+
       <section className="border-t border-border/50 bg-muted/15 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
           <EditorialFadeIn>
