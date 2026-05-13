@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { EditorialFadeIn } from "@/components/editorial-fade-in";
+import { HomeHero } from "@/components/home-hero";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -52,7 +53,7 @@ function ServiceBlock({
   return (
     <div className={showTopRule ? "border-t border-border/60 pt-16 sm:pt-20" : "pt-2 sm:pt-4"}>
       <p className="font-heading text-lg font-normal italic leading-relaxed text-foreground/90 sm:text-xl">{quote}</p>
-      <h2 className="mt-6 font-heading text-2xl font-normal tracking-tight text-foreground sm:text-3xl">{title}</h2>
+      <h3 className="mt-6 font-heading text-2xl font-normal tracking-tight text-foreground sm:text-3xl">{title}</h3>
       <dl className="mt-10 space-y-8 text-[15px] leading-[1.75] sm:text-base">
         <div>
           <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.scope}</dt>
@@ -154,21 +155,36 @@ export default async function ServicesPage({ params }: Props) {
   ];
 
   return (
-    <article className="border-b border-border/50">
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <EditorialFadeIn>
-          <h1 className="font-heading text-4xl font-normal tracking-tight text-foreground sm:text-5xl">{t("title")}</h1>
-          <p className="mt-8 text-lg leading-[1.8] text-muted-foreground sm:text-xl">{t("lede")}</p>
-        </EditorialFadeIn>
-
-        <div className="mt-20 space-y-20 sm:space-y-24">
-          {blocks.map((b, i) => (
-            <EditorialFadeIn key={b.title}>
-              <ServiceBlock {...b} labels={labels} showTopRule={i > 0} />
+    <div className="bg-background">
+      <HomeHero
+        eyebrow={t("heroEyebrow")}
+        titleMain={t("heroTitleMain")}
+        subtextItalic={t("heroSubtextQuote")}
+        subtextPlain={t("heroSubtextRest")}
+      />
+      <article className="border-b border-border/50">
+        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <section className="border-t border-border/40 pt-14 sm:pt-16" aria-labelledby="services-heading">
+            <EditorialFadeIn>
+              <h2
+                id="services-heading"
+                className="font-heading text-4xl font-normal tracking-tight text-foreground sm:text-5xl"
+              >
+                {t("title")}
+              </h2>
+              <p className="mt-8 text-lg leading-[1.8] text-muted-foreground sm:text-xl">{t("lede")}</p>
             </EditorialFadeIn>
-          ))}
+          </section>
+
+          <div className="mt-20 space-y-20 sm:space-y-24">
+            {blocks.map((b, i) => (
+              <EditorialFadeIn key={b.title}>
+                <ServiceBlock {...b} labels={labels} showTopRule={i > 0} />
+              </EditorialFadeIn>
+            ))}
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   );
 }

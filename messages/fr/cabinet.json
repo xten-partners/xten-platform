@@ -1,5 +1,9 @@
 {
   "Cabinet": {
+    "heroEyebrow": "Mandats sensibles · Sélection rigoureuse",
+    "heroQuote": "Le vrai enjeu n’est pas « Qui maîtrise les prompts ? » mais plutôt « Qui peut transformer l’organisation sans la casser ? »",
+    "heroQuoteAttribution": "Antoine Chauvière, Fondateur",
+    "heroSecondaryCta": "Découvrir nos services",
     "metaTitle": "Le cabinet — Xten Partners",
     "metaDescription": "Positionnement ultra-niche : focus sur un moment décisif, mandats sensibles, organisations sous tension.",
     "title": "Xten Partners",
@@ -13,14 +17,13 @@
       "Situations sensibles.",
       "Exécution sous pression."
     ],
-    "p1": "Nous avons dirigé des transformations organisationnelles de l’intérieur tout au long de nos parcours.",
+    "p1": "Nous avons dirigé des transformations organisationnelles de l’intérieur tout au long de nos parcours : nous connaissons la réalité des organisations qui doivent continuer à fonctionner pendant que leurs repères bougent.",
     "listB": [
       "Groupes internationaux.",
       "ETI.",
       "Scale-ups.",
       "Environnements actionnariaux exigeants."
     ],
-    "p2": "Nous connaissons la réalité des organisations qui doivent continuer à fonctionner pendant que leurs repères bougent.",
     "listC": [
       "Projets stratégiques.",
       "Business units.",
@@ -29,9 +32,10 @@
       "Comités de direction.",
       "Boards."
     ],
-    "p3": "Un moment est toujours décisif pour la trajectoire future : celui où l’organisation identifie les dirigeants qui devront porter la transformation.",
-    "listD": ["Critique.", "Sensible.", "Rarement bien traité."],
-    "p4": "Xten Partners existe pour ce moment précis.",
+    "p3": "Critique. Sensible. Rarement bien traité.\n\nUn moment est toujours décisif pour la trajectoire future d’une organisation : celui où l’on identifie les dirigeants qui devront la transformer.\n\nXten Partners existe pour ce moment précis.",
+    "experiencesSectionTitle": "Partage d'expériences",
+    "experiencesBody1": "Xten Partners évolue au sein d’un cercle très confidentiel de dirigeants, d’investisseurs, de partenaires, d’experts et de talents confrontés aux mêmes arbitrages, aux mêmes tensions et aux mêmes responsabilités.",
+    "experiencesBody2": "Nous entretenons ce précieux réseau activement — conversations, mandats, trajectoires, réflexions — car, à l’heure de l’IA, l’intelligence collective et le partage des expériences sont les piliers invisibles des transformations réussies.",
     "founderTitle": "Antoine Chauvière, fondateur de Xten Partners"
   }
 }

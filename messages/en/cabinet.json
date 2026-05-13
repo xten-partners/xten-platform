@@ -1,5 +1,9 @@
 {
   "Cabinet": {
+    "heroEyebrow": "Sensitive mandates · Rigorous selection",
+    "heroQuote": "The real issue is not “Who masters prompts?” but rather “Who can transform the organization without breaking it?”",
+    "heroQuoteAttribution": "Antoine Chauvière, Founder",
+    "heroSecondaryCta": "Discover our services",
     "metaTitle": "The firm — Xten Partners",
     "metaDescription": "Ultra-niche positioning: focus on a decisive moment, sensitive mandates, organizations under strain.",
     "title": "Xten Partners",
@@ -13,14 +17,13 @@
       "Sensitive situations.",
       "Execution under pressure."
     ],
-    "p1": "We have led organizational transformations from the inside throughout our careers.",
+    "p1": "We have led organizational transformations from the inside throughout our careers: we know what it is like for organizations that must keep running while their reference points shift.",
     "listB": [
       "International groups.",
       "Mid-cap companies (ETIs).",
       "Scale-ups.",
       "Demanding shareholder environments."
     ],
-    "p2": "We know what it is like for organizations that must keep running while their reference points shift.",
     "listC": [
       "Strategic projects.",
       "Business units.",
@@ -29,9 +32,10 @@
       "Executive committees.",
       "Boards."
     ],
-    "p3": "There is always a decisive moment for the future trajectory: when the organization identifies the leaders who will have to carry the transformation.",
-    "listD": ["Critical.", "Sensitive.", "Rarely handled well."],
-    "p4": "Xten Partners exists for that precise moment.",
+    "p3": "Critical. Sensitive. Rarely handled well.\n\nThere is always a decisive moment for an organization’s future trajectory: when it identifies the leaders who will have to transform it.\n\nXten Partners exists for that precise moment.",
+    "experiencesSectionTitle": "Sharing experiences",
+    "experiencesBody1": "Xten Partners operates within a highly confidential circle of leaders, investors, partners, experts, and talent facing the same trade-offs, tensions, and responsibilities.",
+    "experiencesBody2": "We nurture this network deliberately — conversations, mandates, trajectories, reflection — because in the age of AI, collective intelligence and shared experience are the quiet pillars of successful transformation.",
     "founderTitle": "Antoine Chauvière, founder of Xten Partners"
   }
 }

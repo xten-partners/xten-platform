@@ -256,7 +256,7 @@ const fr: CaiBundle = {
 };
 
 const en: CaiBundle = {
-  headline: "The new role of Chief AI Officer [CAIO, AI Director, DIA]",
+  headline: "The new role of Chief AI Officer [CAIO, AI Director]",
   lead: "Transforming the organization to meet the challenges of AI.",
   sections: [
     {
