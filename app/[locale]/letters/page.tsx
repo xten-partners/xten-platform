@@ -24,11 +24,11 @@ export default async function LettersIndexPage({ params }: Props) {
   const c = await getTranslations("Common");
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
-      <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+    <div className="xten-container-narrow xten-section-lg">
+      <p className="xten-eyebrow">
         {t("seriesBadge")}
       </p>
-      <h1 className="mt-5 font-heading text-4xl font-normal tracking-tight text-foreground sm:text-[2.5rem]">
+      <h1 className="xten-display-title mt-5 text-4xl text-foreground sm:text-[2.5rem]">
         {t("title")}
       </h1>
       <p className="mt-3 text-sm text-muted-foreground">{t("publicationLine")}</p>
@@ -47,7 +47,7 @@ export default async function LettersIndexPage({ params }: Props) {
             <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
               {t(`items.${slug}.statusLine`)}
             </p>
-            <h2 className="mt-3 font-heading text-2xl font-normal tracking-tight text-foreground">
+            <h2 className="xten-display-title mt-3 text-2xl text-foreground">
               <Link
                 href={`/letters/${slug}`}
                 className="hover:underline hover:decoration-foreground/25 hover:underline-offset-4"

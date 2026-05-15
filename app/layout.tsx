@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import { headers } from "next/headers";
 import { routing } from "@/i18n/routing";
 import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
-const sans = Geist({
+const sans = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
+});
+
+const display = Cormorant_Garamond({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default async function RootLayout({
   const locale = h.get("x-next-intl-locale") ?? routing.defaultLocale;
 
   return (
-    <html lang={locale} className={sans.variable} suppressHydrationWarning>
+    <html lang={locale} className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <body className="xten-atmosphere flex min-h-dvh flex-col bg-background font-sans antialiased">
         {children}
       </body>

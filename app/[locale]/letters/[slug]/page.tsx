@@ -40,14 +40,14 @@ export default async function LetterPage({ params }: Props) {
   const c = await getTranslations("Common");
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+    <article className="xten-container-narrow xten-section-lg">
       <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
         {tLetters("letterPreviewKicker")}
       </p>
       <p className="mt-3 text-sm text-muted-foreground">
         {tLetters(`items.${slug}.statusLine`)}
       </p>
-      <h1 className="mt-8 font-heading text-4xl font-normal tracking-tight text-foreground sm:text-[2.65rem] sm:leading-tight">
+      <h1 className="xten-display-title mt-8 text-4xl text-foreground sm:text-[2.65rem] sm:leading-tight">
         {tLetters(`items.${slug}.title`)}
       </h1>
       <p className="mt-8 text-base leading-[1.8] text-muted-foreground">

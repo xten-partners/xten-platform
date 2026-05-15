@@ -23,8 +23,8 @@ export default async function EtiPage({ params }: Props) {
   const c = await getTranslations("Common");
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:pb-24">
-      <h1 className="font-heading text-[2rem] font-normal tracking-tight text-foreground sm:text-[2.5rem] sm:leading-tight">
+    <article className="xten-container-narrow xten-section-lg">
+      <h1 className="xten-title-rule xten-display-title text-4xl text-foreground sm:text-5xl">
         {t("title")}
       </h1>
       <p className="mt-10 text-lg leading-[1.65] text-muted-foreground">{t("lede")}</p>

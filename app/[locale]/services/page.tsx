@@ -51,20 +51,20 @@ function ServiceBlock({
   showTopRule: boolean;
 }) {
   return (
-    <div className={showTopRule ? "border-t border-border/60 pt-16 sm:pt-20" : "pt-2 sm:pt-4"}>
-      <p className="font-heading text-lg font-normal italic leading-relaxed text-foreground/90 sm:text-xl">{quote}</p>
-      <h3 className="mt-6 font-heading text-2xl font-normal tracking-tight text-foreground sm:text-3xl">{title}</h3>
-      <dl className="mt-10 space-y-8 text-[15px] leading-[1.75] sm:text-base">
+    <div className={showTopRule ? "border-t border-border/55 pt-20 sm:pt-24" : "pt-2 sm:pt-4"}>
+      <p className="text-xl font-light italic leading-relaxed text-foreground/90 sm:text-2xl">{quote}</p>
+      <h3 className="xten-display-title mt-8 text-2xl text-foreground sm:text-4xl">{title}</h3>
+      <dl className="mt-12 space-y-10 text-[15px] font-light leading-[1.8] sm:text-base">
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.scope}</dt>
+          <dt className="xten-eyebrow">{labels.scope}</dt>
           <dd className="mt-2 text-muted-foreground">{scope}</dd>
         </div>
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.duration}</dt>
+          <dt className="xten-eyebrow">{labels.duration}</dt>
           <dd className="mt-2 text-muted-foreground">{duration}</dd>
         </div>
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.pricing}</dt>
+          <dt className="xten-eyebrow">{labels.pricing}</dt>
           <dd className="mt-2 space-y-4 text-muted-foreground">
             <p>{pricingLead}</p>
             <div className="overflow-hidden border border-border/70">
@@ -84,15 +84,15 @@ function ServiceBlock({
           </dd>
         </div>
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.mechanics}</dt>
+          <dt className="xten-eyebrow">{labels.mechanics}</dt>
           <dd className="mt-2 text-muted-foreground">{mechanics}</dd>
         </div>
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.guarantee}</dt>
+          <dt className="xten-eyebrow">{labels.guarantee}</dt>
           <dd className="mt-2 text-muted-foreground">{guarantee}</dd>
         </div>
         <div>
-          <dt className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">{labels.payment}</dt>
+          <dt className="xten-eyebrow">{labels.payment}</dt>
           <dd className="mt-2 text-muted-foreground">{payment}</dd>
         </div>
       </dl>
@@ -157,26 +157,27 @@ export default async function ServicesPage({ params }: Props) {
   return (
     <div className="bg-background">
       <HomeHero
+        variant="editorial"
         eyebrow={t("heroEyebrow")}
         titleMain={t("heroTitleMain")}
         subtextItalic={t("heroSubtextQuote")}
         subtextPlain={t("heroSubtextRest")}
       />
       <article className="border-b border-border/50">
-        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="xten-container-narrow xten-section">
           <section className="border-t border-border/40 pt-14 sm:pt-16" aria-labelledby="services-heading">
             <EditorialFadeIn>
               <h2
                 id="services-heading"
-                className="font-heading text-4xl font-normal tracking-tight text-foreground sm:text-5xl"
+                className="xten-title-rule xten-display-title text-4xl text-foreground sm:text-5xl lg:text-[3.25rem]"
               >
                 {t("title")}
               </h2>
-              <p className="mt-8 text-lg leading-[1.8] text-muted-foreground sm:text-xl">{t("lede")}</p>
+              <p className="mt-10 font-light text-lg leading-[1.85] text-muted-foreground sm:text-xl">{t("lede")}</p>
             </EditorialFadeIn>
           </section>
 
-          <div className="mt-20 space-y-20 sm:space-y-24">
+          <div className="mt-24 space-y-24 sm:space-y-28">
             {blocks.map((b, i) => (
               <EditorialFadeIn key={b.title}>
                 <ServiceBlock {...b} labels={labels} showTopRule={i > 0} />

@@ -26,6 +26,7 @@ export default async function LeCabinetPage({ params }: Props) {
   return (
     <div className="bg-background">
       <HomeHero
+        variant="editorial"
         eyebrow={t("heroEyebrow")}
         titleMain={t("title")}
         quoteBody={t("heroQuote")}
@@ -34,10 +35,10 @@ export default async function LeCabinetPage({ params }: Props) {
         secondaryLabel={t("heroSecondaryCta")}
       />
       <article className="border-b border-border/50">
-        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="xten-container-narrow xten-section">
           <section className="border-t border-border/40 pt-14 sm:pt-16" aria-labelledby="cabinet-niche-heading">
             <EditorialFadeIn>
-              <h2 id="cabinet-niche-heading" className="text-[10px] font-medium uppercase tracking-[0.26em] text-muted-foreground sm:text-[11px]">
+              <h2 id="cabinet-niche-heading" className="xten-eyebrow">
                 {t("strap1")}
               </h2>
             </EditorialFadeIn>
@@ -81,7 +82,7 @@ export default async function LeCabinetPage({ params }: Props) {
             <EditorialFadeIn>
               <h2
                 id="cabinet-experiences-heading"
-                className="text-[10px] font-medium uppercase tracking-[0.26em] text-muted-foreground sm:text-[11px]"
+                className="xten-eyebrow"
               >
                 {t("experiencesSectionTitle")}
               </h2>
@@ -100,7 +101,7 @@ export default async function LeCabinetPage({ params }: Props) {
             <EditorialFadeIn>
               <h2
                 id="cabinet-founder-heading"
-                className="font-heading text-2xl font-normal leading-snug tracking-tight text-foreground sm:text-3xl"
+                className="xten-display-title text-2xl leading-snug text-foreground sm:text-3xl"
               >
                 {t("founderTitle")}
               </h2>

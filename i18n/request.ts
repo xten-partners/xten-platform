@@ -34,20 +34,22 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`../messages/${locale}/cabinet.json`),
   ]);
 
+  const messages = {
+    ...site.default,
+    ...about.default,
+    ...letters.default,
+    ...letterDetail.default,
+    ...contact.default,
+    ...legal.default,
+    ...landing.default,
+    ...contextes.default,
+    ...services.default,
+    ...cabinet.default,
+    ...home.default,
+  };
+
   return {
     locale,
-    messages: {
-      ...site.default,
-      ...home.default,
-      ...about.default,
-      ...letters.default,
-      ...letterDetail.default,
-      ...contact.default,
-      ...legal.default,
-      ...landing.default,
-      ...contextes.default,
-      ...services.default,
-      ...cabinet.default,
-    },
+    messages,
   };
 });

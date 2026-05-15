@@ -6,21 +6,27 @@ export async function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-border/60 bg-muted/20">
-      <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-        <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">{t("tagline")}</p>
-        <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[12px] font-medium uppercase tracking-[0.14em]">
-          <Link href="/privacy" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+    <footer className="mt-auto border-t border-ivory/10 bg-charcoal text-ivory">
+      <div className="xten-container py-16 sm:py-20">
+        <p className="max-w-lg text-sm font-light leading-relaxed text-ivory/70">{t("tagline")}</p>
+        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-[11px] font-medium uppercase tracking-[0.16em]">
+          <Link
+            href="/privacy"
+            className="text-ivory/55 transition-colors duration-500 hover:text-ivory"
+          >
             {t("privacy")}
           </Link>
-          <Link href="/terms" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+          <Link href="/terms" className="text-ivory/55 transition-colors duration-500 hover:text-ivory">
             {t("terms")}
           </Link>
-          <Link href="/privacy#cookies" className="text-muted-foreground transition-colors duration-200 hover:text-foreground">
+          <Link
+            href="/privacy#cookies"
+            className="text-ivory/55 transition-colors duration-500 hover:text-ivory"
+          >
             {t("cookies")}
           </Link>
         </div>
-        <p className="mt-8 text-xs text-muted-foreground">
+        <p className="mt-12 text-xs font-light tracking-wide text-ivory/45">
           © {year} — {t("rights")}
         </p>
       </div>

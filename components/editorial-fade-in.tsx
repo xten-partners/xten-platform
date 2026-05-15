@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
+import { fadeReveal, fadeRevealViewport, motionDurations, motionEase } from "@/lib/motion";
 
 type Props = {
   children: ReactNode;
@@ -13,19 +14,19 @@ export function EditorialFadeIn({ children, className, delay = 0 }: Props) {
   const reduce = useReducedMotion();
 
   if (reduce) {
-    return <div className={className}>{children}</div>;
+    return <motion.div className={className}>{children}</motion.div>;
   }
 
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-48px" }}
+      initial={fadeReveal.initial}
+      whileInView={fadeReveal.animate}
+      viewport={fadeRevealViewport}
       transition={{
-        duration: 0.75,
+        duration: motionDurations.slow,
         delay,
-        ease: [0.22, 1, 0.36, 1],
+        ease: motionEase,
       }}
     >
       {children}

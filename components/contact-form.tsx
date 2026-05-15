@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { useSearchParams } from "next/navigation";
 import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -27,6 +28,8 @@ function SubmitButton() {
 
 export function ContactForm() {
   const t = useTranslations("Contact");
+  const searchParams = useSearchParams();
+  const searchQuery = searchParams.get("q")?.trim() ?? "";
   const consentLabel = t.rich("consentRich", {
     privacy: (chunks) => (
       <Link href="/privacy" className="underline underline-offset-4">
@@ -39,7 +42,7 @@ export function ContactForm() {
   return (
     <form action={formAction} className="mt-10 max-w-xl space-y-6">
       <div className="grid gap-2">
-        <label htmlFor="name" className="text-sm font-medium text-foreground">
+        <label htmlFor="name" className="xten-eyebrow text-foreground">
           {t("name")}
         </label>
         <Input
@@ -98,6 +101,7 @@ export function ContactForm() {
           required
           rows={6}
           className="min-h-32 resize-y"
+          defaultValue={searchQuery}
           aria-invalid={state.status === "invalid" && !!state.fields.message}
         />
         <p className="text-xs text-muted-foreground">{t("messageHint")}</p>
@@ -109,7 +113,7 @@ export function ContactForm() {
           </p>
         ) : null}
       </div>
-      <div className="flex gap-3 rounded-lg border border-border bg-muted/20 p-4">
+      <div className="flex gap-3 border border-border/70 bg-muted/25 p-5">
         <input
           id="consent"
           name="consent"

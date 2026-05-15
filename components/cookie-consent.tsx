@@ -55,13 +55,13 @@ export function CookieConsent() {
       role="dialog"
       aria-labelledby="cookie-consent-title"
       aria-live="polite"
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-background/95 p-4 shadow-[0_-6px_28px_oklch(0.35_0.04_38/0.08)] backdrop-blur-md supports-backdrop-filter:bg-background/92 md:p-6"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-border/50 bg-background/92 p-5 shadow-[0_-8px_40px_oklch(0.2_0.02_250/0.12)] backdrop-blur-xl supports-backdrop-filter:bg-background/88 md:p-7"
     >
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-8">
+      <div className="xten-container flex w-full flex-col gap-5 md:flex-row md:items-end md:justify-between md:gap-10">
         <div className="max-w-xl">
           <p
             id="cookie-consent-title"
-            className="font-heading text-base font-medium tracking-tight text-foreground"
+            className="font-sans text-base font-medium tracking-[0.1em] uppercase text-foreground"
           >
             {t("title")}
           </p>

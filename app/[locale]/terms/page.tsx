@@ -23,15 +23,15 @@ export default async function TermsPage({ params }: Props) {
   const sections = t.raw("sections") as LegalSection[];
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <h1 className="font-heading text-4xl font-normal tracking-tight text-foreground">
+    <article className="xten-container-narrow xten-section">
+      <h1 className="xten-display-title text-4xl text-foreground">
         {t("title")}
       </h1>
       <p className="mt-3 text-sm text-muted-foreground">{t("updated")}</p>
       <div className="mt-12 space-y-12">
         {sections.map((section) => (
           <section key={section.heading}>
-            <h2 className="font-heading text-xl font-medium tracking-tight text-foreground">
+            <h2 className="xten-display-title text-xl text-foreground">
               {section.heading}
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">

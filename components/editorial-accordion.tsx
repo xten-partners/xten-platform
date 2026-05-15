@@ -25,14 +25,14 @@ export function EditorialAccordion({ items, ariaLabel }: Props) {
   }, []);
 
   return (
-    <div className="divide-y divide-border/70 border border-border/70" role="region" aria-label={ariaLabel}>
+    <div className="divide-y divide-border/60 border border-border/60" role="region" aria-label={ariaLabel}>
       {items.map((item) => {
         const isOpen = !!open[item.id];
         const panelId = `${baseId}-${item.id}-panel`;
         const headerId = `${baseId}-${item.id}-header`;
 
         return (
-          <div key={item.id} className="bg-card/40">
+          <div key={item.id} className="bg-card/50">
             <h3 className="m-0">
               <button
                 type="button"
@@ -40,9 +40,9 @@ export function EditorialAccordion({ items, ariaLabel }: Props) {
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 onClick={() => toggle(item.id)}
-                className="flex w-full items-start justify-between gap-6 px-5 py-5 text-left transition-colors hover:bg-muted/40 sm:px-6 sm:py-6"
+                className="flex w-full items-start justify-between gap-6 px-6 py-6 text-left transition-colors duration-500 hover:bg-foreground/[0.03] sm:px-7 sm:py-7"
               >
-                <span className="font-heading text-lg font-medium leading-snug tracking-tight text-foreground sm:text-xl">
+                <span className="xten-display-title text-xl leading-snug text-foreground sm:text-2xl">
                   {item.title}
                 </span>
                 <span
