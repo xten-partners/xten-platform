@@ -1,28 +1,28 @@
-/** Cinematic motion presets — DDRE-style slow, elegant transitions */
+/** Motion presets — discret, précision DDRE */
 export const motionEase = [0.22, 1, 0.36, 1] as const;
 
 export const motionDurations = {
-  fast: 0.45,
-  base: 0.85,
-  slow: 1.15,
-  cinematic: 1.4,
+  fast: 0.4,
+  base: 0.7,
+  slow: 1.05,
+  cinematic: 1.25,
 } as const;
 
 export const fadeReveal = {
-  initial: { opacity: 0, y: 28 },
+  initial: { opacity: 0, y: 8 },
   animate: { opacity: 1, y: 0 },
   transition: {
-    duration: motionDurations.slow,
+    duration: motionDurations.base,
     ease: motionEase,
   },
 } as const;
 
 export const fadeRevealViewport = {
   once: true,
-  margin: "-12%" as const,
+  margin: "-8%" as const,
 };
 
 export const imageParallax = {
-  yRange: ["-6%", "6%"] as [string, string],
-  scale: 1.08,
+  yRange: ["-1%", "1%"] as [string, string],
+  scale: 1.015,
 };

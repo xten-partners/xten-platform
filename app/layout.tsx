@@ -32,7 +32,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
-      <body className="xten-atmosphere flex min-h-dvh flex-col bg-background font-sans antialiased">
+      <body className="flex min-h-dvh flex-col bg-background font-sans antialiased">
         {children}
       </body>
     </html>

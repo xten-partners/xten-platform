@@ -52,19 +52,19 @@ function HeroTitle({
     };
   }, [main, sub, fitSubFont]);
 
-  const textClass = light ? "text-ivory" : "text-foreground";
+  const textClass = light ? "xten-hero-text-on-image text-ivory" : "text-foreground";
 
   return (
     <h1 className={`mt-10 w-full max-w-5xl ${textClass}`}>
       <span
         ref={mainRef}
-        className="xten-display-title block w-fit max-w-full text-[2.05rem] leading-[1.08] sm:text-4xl sm:leading-[1.05] md:text-5xl lg:text-[3.15rem] lg:leading-[1.02]"
+        className={`xten-display-title block w-fit max-w-full text-[2.05rem] leading-[1.08] sm:text-4xl sm:leading-[1.05] md:text-5xl lg:text-[3.15rem] lg:leading-[1.02] ${textClass}`}
       >
         {main}
       </span>
       <span
         ref={subRef}
-        className={`xten-display-title-sub mt-5 block w-fit max-w-full whitespace-nowrap ${light ? "text-ivory/75" : "text-muted-foreground"}`}
+        className={`xten-display-title-sub mt-5 block w-fit max-w-full whitespace-nowrap ${light ? "text-ivory/92" : "text-muted-foreground"}`}
       >
         {sub}
       </span>
@@ -120,9 +120,9 @@ export function HomeHero({
 
   const content = (
     <EditorialFadeIn>
-      <p className={`xten-eyebrow ${isCinematic ? "text-ivory/55" : ""}`}>{eyebrowText}</p>
+      <p className={isCinematic ? "xten-eyebrow-on-image" : "xten-eyebrow"}>{eyebrowText}</p>
       <HeroTitle main={mainTitle} sub={t("heroTitleSub")} light={isCinematic} />
-      {isCinematic ? <HeroSearchBar light /> : null}
+      {isCinematic ? <HeroSearchBar light onImage /> : null}
       {useQuote ? (
         <blockquote className={`mt-10 max-w-2xl border-l-2 ${quoteBorder} pl-6 sm:pl-8`}>
           <p className={`whitespace-pre-line text-lg font-light italic leading-[1.75] sm:text-xl sm:leading-[1.72] ${quoteText}`}>
@@ -140,7 +140,7 @@ export function HomeHero({
       ) : omitSubtext ? null : (
         <p className={`mt-10 max-w-2xl whitespace-pre-line ${bodyClass}`}>{bodyText}</p>
       )}
-      <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
+      <div className="mt-16 flex flex-col gap-4 sm:mt-[4.5rem] sm:flex-row sm:items-center sm:gap-6">
         <Link
           href="/contact"
           className={isCinematic ? "xten-btn-primary bg-ivory text-charcoal hover:bg-ivory/92" : "xten-btn-primary"}
@@ -149,7 +149,11 @@ export function HomeHero({
         </Link>
         <Link
           href={secondaryHrefResolved}
-          className={isCinematic ? "xten-btn-outline-light" : "xten-btn-outline"}
+          className={
+            isCinematic
+              ? "xten-btn-outline-light hover:border-signature/50 hover:text-ivory"
+              : "xten-btn-outline"
+          }
         >
           {secondaryLabelResolved}
         </Link>
@@ -159,14 +163,14 @@ export function HomeHero({
 
   if (!isCinematic) {
     return (
-      <section className="border-b border-border/50">
+      <section className="border-b border-border">
         <div className="xten-container xten-section-lg pt-28 sm:pt-32">{content}</div>
       </section>
     );
   }
 
   return (
-    <section className="relative min-h-[92vh] overflow-hidden">
+    <section className="relative min-h-[100svh] overflow-hidden">
       <CinematicImage
         src={editorialImages.hero.src}
         alt={editorialImages.hero.alt}
@@ -175,8 +179,14 @@ export function HomeHero({
         overlay="dark"
         objectPosition={editorialImages.hero.objectPosition}
       />
+      <div className="pointer-events-none absolute inset-0 z-[1]" aria-hidden>
+        <div className="absolute inset-0 xten-hero-overlay-horizontal" />
+        <div className="absolute inset-0 xten-hero-overlay-vertical" />
+      </div>
       <div className="relative z-10">
-        <div className="xten-container xten-section-lg pt-28 sm:pt-32">{content}</div>
+        <div className="xten-container xten-section-lg pt-28 sm:pt-32">
+          <div className="xten-hero-content-zone">{content}</div>
+        </div>
       </div>
     </section>
   );

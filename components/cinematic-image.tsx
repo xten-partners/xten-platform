@@ -19,7 +19,7 @@ type Props = {
 };
 
 const overlayLight =
-  "bg-gradient-to-b from-[oklch(0.99_0.006_88/0.38)] via-transparent to-[oklch(0.96_0.01_86/0.55)]";
+  "bg-gradient-to-b from-[oklch(0.99_0.002_265/0.28)] via-transparent to-[oklch(0.96_0.004_265/0.42)]";
 
 export function CinematicImage({
   src,
@@ -72,23 +72,12 @@ export function CinematicImage({
         />
       </motion.div>
       {overlay !== "none" ? (
-        <>
-          <motion.div
-            className={cn("absolute inset-0", overlayClass, overlayClassName)}
-            initial={reduce ? false : { opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, ease: motionEase }}
-          />
-          {overlay === "dark" ? (
-            <motion.div
-              className="xten-cinematic-warm-wash absolute inset-0"
-              initial={reduce ? false : { opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: motionEase }}
-              aria-hidden
-            />
-          ) : null}
-        </>
+        <motion.div
+          className={cn("absolute inset-0", overlayClass, overlayClassName)}
+          initial={reduce ? false : { opacity: 0.92 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, ease: motionEase }}
+        />
       ) : null}
     </motion.div>
   );

@@ -30,7 +30,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
           <MenuIcon className="size-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[min(100%,22rem)] border-border/50 bg-background">
+      <SheetContent side="right" className="w-[min(100%,22rem)] border-border bg-background">
         <SheetHeader>
           <SheetTitle className="xten-display-title text-left text-xl">
             {t("menuTitle")}
@@ -41,13 +41,13 @@ export function MobileNav({ items }: { items: NavItem[] }) {
             <Link
               key={item.href}
               href={item.href}
-              className="px-3 py-3.5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors duration-500 hover:bg-foreground/[0.04] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signature focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="px-3 py-3.5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors duration-300 hover:bg-foreground/[0.03] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signature focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="mt-10 border-t border-border/55 pt-8">
+        <div className="mt-10 border-t border-border pt-8">
           <LocaleSwitcher />
         </div>
       </SheetContent>

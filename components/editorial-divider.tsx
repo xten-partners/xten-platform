@@ -9,15 +9,15 @@ export function EditorialDivider({ label, className }: EditorialDividerProps) {
       className={`my-14 flex items-center gap-6 md:my-20 ${className ?? ""}`}
       aria-hidden
     >
-      <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-border" />
+      <div className="h-px flex-1 bg-border" />
       {label ? (
-        <span className="max-w-[12rem] text-center text-[10px] font-medium uppercase leading-snug tracking-[0.28em] text-muted-foreground">
+        <span className="max-w-[12rem] text-center text-[10px] font-medium uppercase leading-snug tracking-[0.26em] text-muted-foreground">
           {label}
         </span>
       ) : (
-        <span className="inline-flex size-1.5 shrink-0 rounded-full bg-foreground/20" />
+        <span className="inline-flex size-1 shrink-0 bg-foreground/25" />
       )}
-      <div className="h-px flex-1 bg-gradient-to-l from-transparent via-border to-border" />
+      <div className="h-px flex-1 bg-border" />
     </div>
   );
 }

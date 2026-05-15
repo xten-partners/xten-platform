@@ -32,11 +32,11 @@ const editorialBase = "/images/editorial";
 
 /** Slots utilisés sur le site */
 export const editorialImages = {
-  /** Salle de conseil — autorité calme, perspective stratégique */
+  /** Salle de conseil — perspective table, lumière naturelle, skyline */
   hero: localAsset(
-    `${editorialBase}/hero-boardroom.jpg`,
-    "50% 42%",
-    "Salle de conseil feutrée, lumière naturelle et skyline en arrière-plan",
+    `${editorialBase}/hero-boardroom.png`,
+    "48% 52%",
+    "Salle de conseil, table de conseil et vue sur la ville",
     "hero",
   ),
   /** Écriture stratégique — intention, clarté */

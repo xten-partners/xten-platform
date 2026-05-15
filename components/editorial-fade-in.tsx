@@ -24,7 +24,7 @@ export function EditorialFadeIn({ children, className, delay = 0 }: Props) {
       whileInView={fadeReveal.animate}
       viewport={fadeRevealViewport}
       transition={{
-        duration: motionDurations.slow,
+        duration: motionDurations.base,
         delay,
         ease: motionEase,
       }}

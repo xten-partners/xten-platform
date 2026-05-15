@@ -62,7 +62,7 @@ function CaiCard({ section, index, locale }: { section: CaiSection; index: numbe
 
   return (
     <EditorialFadeIn key={section.subtitle}>
-      <article className="xten-card flex flex-col p-6 sm:p-7">
+      <article className="flex flex-col border-t border-border bg-transparent pt-6 sm:pt-7">
         <h3 className="m-0">
           <button
             type="button"
@@ -70,7 +70,7 @@ function CaiCard({ section, index, locale }: { section: CaiSection; index: numbe
             aria-expanded={open}
             aria-controls={panelId}
             onClick={() => setOpen((v) => !v)}
-            className="group flex w-full items-start justify-between gap-4 rounded-sm text-left outline-none transition-colors duration-500 hover:bg-foreground/[0.03] focus-visible:ring-2 focus-visible:ring-signature focus-visible:ring-offset-2 focus-visible:ring-offset-background -m-1.5 p-1.5"
+            className="group flex w-full items-start justify-between gap-4 text-left outline-none transition-colors duration-300 hover:bg-foreground/[0.025] focus-visible:ring-2 focus-visible:ring-signature focus-visible:ring-offset-2 focus-visible:ring-offset-background -m-1.5 p-1.5"
           >
             <span className="xten-display-title min-w-0 flex-1 text-base leading-snug text-foreground sm:text-lg">
               {section.subtitle}
@@ -94,7 +94,7 @@ function CaiCard({ section, index, locale }: { section: CaiSection; index: numbe
               animate={{ opacity: 1, y: 0 }}
               exit={reduce ? undefined : { opacity: 0, y: -6 }}
               transition={{ duration: 0.55, ease: motionEase }}
-              className="mt-5 border-t border-border/55 pt-5"
+              className="mt-5 border-t border-border pt-5"
             >
               <div className="space-y-4">
                 {section.blocks.map((block, j) => renderBlock(block, `card-${index}-${j}`, true))}
@@ -113,11 +113,11 @@ export function HomeCaiRoleSection() {
   const bundle = homeCaiRoleBundles[locale];
 
   return (
-    <section className="xten-section-lg border-b border-border/50">
-      <div className="xten-container">
+    <section className="xten-section-xl border-y border-border bg-background">
+      <div className="xten-container-wide">
         <EditorialFadeIn>
           <h2 className="xten-eyebrow max-w-4xl">{bundle.headline}</h2>
-          <p className="mt-8 max-w-3xl font-sans text-2xl font-light leading-snug text-foreground sm:text-3xl">
+          <p className="mt-10 max-w-3xl text-[1.65rem] font-light leading-[1.22] tracking-[-0.015em] text-foreground sm:text-[2.1rem] lg:text-[2.45rem]">
             {bundle.lead}
           </p>
         </EditorialFadeIn>
@@ -130,7 +130,7 @@ export function HomeCaiRoleSection() {
           </div>
 
           {bundle.sections.length > 6 ? (
-            <div className="mt-20 max-w-3xl border-t border-border/55 pt-20 sm:mt-24 sm:pt-24">
+            <div className="mt-20 max-w-3xl border-t border-border pt-20 sm:mt-24 sm:pt-24">
               {bundle.sections.slice(6).map((section, i) => renderSection(section, 100 + i))}
             </div>
           ) : null}

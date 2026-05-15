@@ -9,11 +9,12 @@ type Props = {
 
 export function EditorialImageBand({ image, children }: Props) {
   return (
-    <section className="relative min-h-[36vh] overflow-hidden sm:min-h-[42vh] lg:min-h-[48vh]">
+    <section className="relative min-h-[48vh] overflow-hidden sm:min-h-[54vh] lg:min-h-[62vh]">
       <CinematicImage
         src={image.src}
         alt={image.alt}
         objectPosition={image.objectPosition}
+        grade="band"
         overlay="dark"
       />
       {children ? (

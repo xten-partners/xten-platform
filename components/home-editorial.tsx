@@ -18,11 +18,11 @@ export function HomeEditorial() {
 
       <HomePositioningStatement />
 
-      <section className="xten-editorial-surface xten-section-lg border-b border-border/50">
-        <div className="xten-container">
+      <section className="xten-surface-muted xten-section-xl border-b border-border">
+        <div className="xten-container-wide">
           <EditorialFadeIn>
             <p className="xten-eyebrow">{t("servicesSectionTitle")}</p>
-            <div className="mt-16 grid gap-16 lg:mt-20 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-border/55">
+            <div className="mt-20 grid gap-20 lg:mt-28 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-border">
               {[
                 { title: "service01Title", body: "service01Body" },
                 { title: "service02Title", body: "service02Body" },
@@ -33,10 +33,10 @@ export function HomeEditorial() {
                   key={s.title}
                   className={`flex flex-col ${i === 0 ? "lg:pr-8 xl:pr-10" : ""} ${i === 3 ? "lg:pl-8 xl:pl-10" : "lg:px-8 xl:px-10"}`}
                 >
-                  <h3 className="xten-display-title text-xl leading-snug text-foreground sm:text-2xl">
+                  <h3 className="xten-display-title text-xl leading-snug text-foreground sm:text-2xl lg:text-[1.65rem]">
                     {t(s.title)}
                   </h3>
-                  <p className="mt-6 flex-1 text-[15px] font-light leading-[1.8] text-muted-foreground sm:text-base">
+                  <p className="mt-8 flex-1 xten-prose text-[15px] sm:text-base">
                     {t(s.body)}
                   </p>
                   <p className="mt-10">
@@ -59,7 +59,7 @@ export function HomeEditorial() {
 
       <EditorialImageBand image={editorialImages.atmosphere} />
 
-      <section className="xten-section-lg border-t border-border/40">
+      <section className="xten-editorial-surface xten-section-xl border-t border-border">
         <div className="xten-container-narrow text-center">
           <EditorialFadeIn>
             <Link href="/contact" className="xten-btn-primary">

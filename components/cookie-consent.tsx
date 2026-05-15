@@ -55,7 +55,7 @@ export function CookieConsent() {
       role="dialog"
       aria-labelledby="cookie-consent-title"
       aria-live="polite"
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border/50 bg-background/92 p-5 shadow-[0_-8px_40px_oklch(0.2_0.02_250/0.12)] backdrop-blur-xl supports-backdrop-filter:bg-background/88 md:p-7"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background p-5 md:p-7"
     >
       <div className="xten-container flex w-full flex-col gap-5 md:flex-row md:items-end md:justify-between md:gap-10">
         <div className="max-w-xl">
