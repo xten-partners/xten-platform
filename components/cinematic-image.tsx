@@ -14,8 +14,8 @@ type Props = {
   overlayClassName?: string;
   objectPosition?: string;
   overlay?: "dark" | "light" | "none";
-  /** hero = plus lumineux ; band = bandeaux intermédiaires */
-  grade?: "hero" | "band";
+  /** hero = plus lumineux ; band = bandeaux intermédiaires ; night = désaturé, ambiance nocturne */
+  grade?: "hero" | "band" | "night";
 };
 
 const overlayLight =
@@ -40,7 +40,11 @@ export function CinematicImage({
   const y = useTransform(scrollYProgress, [0, 1], imageParallax.yRange);
 
   const gradeClass =
-    grade === "hero" ? "xten-cinematic-grade-hero" : "xten-cinematic-grade-band";
+    grade === "hero"
+      ? "xten-cinematic-grade-hero"
+      : grade === "night"
+        ? "xten-cinematic-grade-night"
+        : "xten-cinematic-grade-band";
   const overlayClass =
     overlay === "dark"
       ? grade === "hero"

@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { EditorialFadeIn } from "@/components/editorial-fade-in";
 import { HomeHero } from "@/components/home-hero";
+import { editorialImages } from "@/lib/editorial-images";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -158,6 +159,8 @@ export default async function ServicesPage({ params }: Props) {
     <div className="bg-background">
       <HomeHero
         variant="editorial"
+        backgroundImage={editorialImages.servicesHero}
+        backgroundTreatment="hero"
         eyebrow={t("heroEyebrow")}
         titleMain={t("heroTitleMain")}
         subtextItalic={t("heroSubtextQuote")}

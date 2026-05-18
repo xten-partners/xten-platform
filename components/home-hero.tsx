@@ -6,7 +6,8 @@ import { Link } from "@/i18n/navigation";
 import { CinematicImage } from "@/components/cinematic-image";
 import { EditorialFadeIn } from "@/components/editorial-fade-in";
 import { HeroSearchBar } from "@/components/hero-search-bar";
-import { editorialImages } from "@/lib/editorial-images";
+import { editorialImages, type EditorialImageAsset } from "@/lib/editorial-images";
+import { cn } from "@/lib/utils";
 
 function HeroTitle({
   main,
@@ -83,6 +84,9 @@ type HomeHeroProps = {
   subtextItalic?: string;
   subtextPlain?: string;
   variant?: "cinematic" | "editorial";
+  /** Image plein écran (ex. mandate-window comme la section cinématique d’accueil) */
+  backgroundImage?: EditorialImageAsset;
+  backgroundTreatment?: "hero" | "mandate";
   /** Homepage: statement lives in the section below the hero */
   omitSubtext?: boolean;
 };
@@ -98,6 +102,8 @@ export function HomeHero({
   subtextItalic,
   subtextPlain,
   variant = "cinematic",
+  backgroundImage,
+  backgroundTreatment = "hero",
   omitSubtext = false,
 }: HomeHeroProps) {
   const t = useTranslations("Home");
@@ -109,20 +115,23 @@ export function HomeHero({
   const secondaryHrefResolved = secondaryHref ?? "/le-cabinet";
   const secondaryLabelResolved = secondaryLabel ?? t("ctaApproche");
   const isCinematic = variant === "cinematic";
+  const hasImageBackground = Boolean(backgroundImage);
+  const isOnImage = isCinematic || hasImageBackground;
+  const isMandateBackground = hasImageBackground && backgroundTreatment === "mandate";
 
-  const bodyClass = isCinematic
+  const bodyClass = isOnImage
     ? "text-sm font-light leading-[1.85] text-ivory/78 sm:text-base sm:leading-[1.8]"
     : "text-sm font-light leading-[1.85] text-muted-foreground sm:text-base sm:leading-[1.8]";
 
-  const quoteBorder = isCinematic ? "border-ivory/20" : "border-foreground/12";
-  const quoteText = isCinematic ? "text-ivory/78" : "text-muted-foreground";
-  const quoteAttr = isCinematic ? "text-ivory/55" : "text-muted-foreground";
+  const quoteBorder = isOnImage ? "border-ivory/20" : "border-foreground/12";
+  const quoteText = isOnImage ? "text-ivory/78" : "text-muted-foreground";
+  const quoteAttr = isOnImage ? "text-ivory/55" : "text-muted-foreground";
 
   const content = (
     <EditorialFadeIn>
-      <p className={isCinematic ? "xten-eyebrow-on-image" : "xten-eyebrow"}>{eyebrowText}</p>
-      <HeroTitle main={mainTitle} sub={t("heroTitleSub")} light={isCinematic} />
-      {isCinematic ? <HeroSearchBar light onImage /> : null}
+      <p className={isOnImage ? "xten-eyebrow-on-image" : "xten-eyebrow"}>{eyebrowText}</p>
+      <HeroTitle main={mainTitle} sub={t("heroTitleSub")} light={isOnImage} />
+      {isCinematic && !hasImageBackground ? <HeroSearchBar light onImage /> : null}
       {useQuote ? (
         <blockquote className={`mt-10 max-w-2xl border-l-2 ${quoteBorder} pl-6 sm:pl-8`}>
           <p className={`whitespace-pre-line text-lg font-light italic leading-[1.75] sm:text-xl sm:leading-[1.72] ${quoteText}`}>
@@ -134,7 +143,7 @@ export function HomeHero({
         </blockquote>
       ) : useSplitSubtext ? (
         <div className={`mt-10 max-w-2xl ${bodyClass}`}>
-          <p className="text-lg font-light italic sm:text-xl">{subtextItalic}</p>
+          <p className="italic">{subtextItalic}</p>
           <p className="mt-3 not-italic">{subtextPlain}</p>
         </div>
       ) : omitSubtext ? null : (
@@ -143,14 +152,14 @@ export function HomeHero({
       <div className="mt-16 flex flex-col gap-4 sm:mt-[4.5rem] sm:flex-row sm:items-center sm:gap-6">
         <Link
           href="/contact"
-          className={isCinematic ? "xten-btn-primary bg-ivory text-charcoal hover:bg-ivory/92" : "xten-btn-primary"}
+          className={isOnImage ? "xten-btn-primary bg-ivory text-charcoal hover:bg-ivory/92" : "xten-btn-primary"}
         >
           {t("ctaConversation")}
         </Link>
         <Link
           href={secondaryHrefResolved}
           className={
-            isCinematic
+            isOnImage
               ? "xten-btn-outline-light hover:border-signature/50 hover:text-ivory"
               : "xten-btn-outline"
           }
@@ -161,7 +170,7 @@ export function HomeHero({
     </EditorialFadeIn>
   );
 
-  if (!isCinematic) {
+  if (!isCinematic && !hasImageBackground) {
     return (
       <section className="border-b border-border">
         <div className="xten-container xten-section-lg pt-28 sm:pt-32">{content}</div>
@@ -169,23 +178,46 @@ export function HomeHero({
     );
   }
 
+  const image = backgroundImage ?? editorialImages.hero;
+
   return (
-    <section className="relative min-h-[100svh] overflow-hidden">
+    <section
+      className={cn(
+        "relative overflow-hidden border-b",
+        isMandateBackground ? "min-h-[85vh] border-ivory/8 sm:min-h-[90vh]" : "min-h-[100svh]",
+      )}
+    >
       <CinematicImage
-        src={editorialImages.hero.src}
-        alt={editorialImages.hero.alt}
+        src={image.src}
+        alt={image.alt}
         priority
-        grade="hero"
-        overlay="dark"
-        objectPosition={editorialImages.hero.objectPosition}
+        grade={isMandateBackground ? "night" : "hero"}
+        overlay={isMandateBackground ? "none" : "dark"}
+        objectPosition={image.objectPosition}
+        className={isMandateBackground ? "scale-105" : undefined}
       />
       <div className="pointer-events-none absolute inset-0 z-[1]" aria-hidden>
-        <div className="absolute inset-0 xten-hero-overlay-horizontal" />
-        <div className="absolute inset-0 xten-hero-overlay-vertical" />
+        {isMandateBackground ? (
+          <>
+            <div className="absolute inset-0 xten-cinematic-mandate-overlay" />
+            <div className="absolute inset-0 xten-cinematic-vignette" />
+            <div className="absolute inset-0 xten-cinematic-grain" />
+          </>
+        ) : (
+          <>
+            <div className="absolute inset-0 xten-hero-overlay-horizontal" />
+            <div className="absolute inset-0 xten-hero-overlay-vertical" />
+          </>
+        )}
       </div>
       <div className="relative z-10">
-        <div className="xten-container xten-section-lg pt-28 sm:pt-32">
-          <div className="xten-hero-content-zone">{content}</div>
+        <div
+          className={cn(
+            "xten-container xten-section-lg pt-28 sm:pt-32",
+            isMandateBackground && "flex min-h-[85vh] items-center sm:min-h-[90vh]",
+          )}
+        >
+          <div className="xten-hero-content-zone w-full">{content}</div>
         </div>
       </div>
     </section>

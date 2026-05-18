@@ -53,6 +53,27 @@ export const editorialImages = {
     "Silhouettes exécutives face à la ville, moment de réflexion collective",
     "boardGovernance",
   ),
+  /** Plein écran — skyline, mandat sensible, ambiance nocturne */
+  cinematicMandate: localAsset(
+    `${editorialBase}/mandate-window.jpg`,
+    "52% 32%",
+    "Silhouettes de dirigeants face à la ville, lumière froide et architecture premium",
+    "boardGovernance",
+  ),
+  /** Services — dirigeants face à la ville, salon exécutif */
+  servicesHero: localAsset(
+    `${editorialBase}/services-hero.png`,
+    "50% 42%",
+    "Deux dirigeants face à la ville depuis un salon de conseil",
+    "boardGovernance",
+  ),
+  /** Cabinet — logo, credenza, skyline au crépuscule */
+  cabinetHero: localAsset(
+    `${editorialBase}/cabinet-hero.png`,
+    "38% 52%",
+    "Intérieur du cabinet Xten Partners, logo et vue sur la ville",
+    "executivePresence",
+  ),
   /** Papeterie exécutive — discrétion, engagement */
   atmosphere: localAsset(
     `${editorialBase}/detail-stationery.jpg`,

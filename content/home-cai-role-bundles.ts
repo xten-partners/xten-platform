@@ -8,14 +8,39 @@ export type CaiSection = {
 };
 
 export type CaiBundle = {
+  eyebrow: string;
   headline: string;
-  lead: string;
+  subheadline: string;
+  leadBlocks: CaiBlock[];
   sections: CaiSection[];
 };
 
 const fr: CaiBundle = {
-  headline: "Le nouveau rôle de Chief AI Officer [CAIO, Directeur IA, DIA]",
-  lead: "Transformer l’organisation pour relever les défis de l’IA.",
+  eyebrow: "Le nouveau rôle de Chief AI Officer [CAIO, Directeur IA, DIA]",
+  headline: "Transformer l’organisation pour relever les défis de l’IA.",
+  subheadline:
+    "Le risque n’est pas d’avancer trop lentement. C’est d’avancer aveuglément.",
+  leadBlocks: [
+    {
+      type: "p",
+      text: "Pas simplement un expert. Pas un évangéliste. Pas un profil « innovation ».",
+    },
+    { type: "p", text: "Un leader capable :" },
+    {
+      type: "ul",
+      items: [
+        "d’arbitrer sous pression,",
+        "de tenir un comex difficile quand les intérêts divergent,",
+        "d’absorber la résistance interne,",
+        "de maintenir de la clarté dans le bruit,",
+        "et de transformer l’organisation pendant que ses repères changent.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Par expérience, les dirigeants qui ont déjà transformé sous contrainte et qui ont une vision IA sont les plus à même de réussir sans casser l’organisation. Parce qu’à ce niveau, le sujet n’est pas seulement l’outil. C’est le jugement.",
+    },
+  ],
   sections: [
     {
       subtitle: "Urgence et peur de passer à côté : FOMO (Fear Of Missing Out)",
@@ -199,65 +224,34 @@ const fr: CaiBundle = {
         },
       ],
     },
-    {
-      subtitle: null,
-      blocks: [
-        {
-          type: "p",
-          text: "Beaucoup d’entreprises pensent avoir un sujet IA. Elles ont en réalité un sujet d’organisation. 30 % de la valeur réside en général dans les outils. 70 % dans l’organisation.",
-        },
-        {
-          type: "p",
-          text: "Quand une organisation parle uniquement d’outils, c’est souvent qu’elle évite une conversation plus difficile.",
-        },
-        {
-          type: "p",
-          text: "Nous intervenons lorsque les dirigeants comprennent que le sujet n’est plus l’outil. C’est généralement à ce moment-là, dans des contextes souvent sensibles, qu’un mandat commence pour traiter la pression IA.",
-        },
-        {
-          type: "ul",
-          items: [
-            "réduire le bruit autour du sujet,",
-            "clarifier le mandat,",
-            "identifier les profils capables de tenir la transformation,",
-            "sécuriser des recrutements sensibles.",
-          ],
-        },
-        {
-          type: "p",
-          text: "Tous les managers et dirigeants ne savent pas transformer une organisation sous tension. Avec notre expérience, nous avons développé une approche ad hoc et une lecture précise des profils qui en sont capables.",
-        },
-        {
-          type: "p",
-          text: "Pas simplement un expert. Pas un évangéliste. Pas un profil « innovation ».",
-        },
-        { type: "p", text: "Un leader capable :" },
-        {
-          type: "ul",
-          items: [
-            "d’arbitrer sous pression,",
-            "de tenir un comex difficile quand les intérêts divergent,",
-            "d’absorber la résistance interne,",
-            "de maintenir de la clarté dans le bruit,",
-            "et de transformer l’organisation pendant que ses repères changent.",
-          ],
-        },
-        {
-          type: "p",
-          text: "Le risque n’est pas d’avancer trop lentement. C’est d’avancer aveuglément.",
-        },
-        {
-          type: "p",
-          text: "C’est pour cela que nous regardons moins les experts de l’IA que les dirigeants qui ont déjà transformé sous contrainte. Parce qu’à ce niveau, le sujet n’est plus l’outil. C’est le jugement.",
-        },
-      ],
-    },
   ],
 };
 
 const en: CaiBundle = {
-  headline: "The new role of Chief AI Officer [CAIO, AI Director]",
-  lead: "Transforming the organization to meet the challenges of AI.",
+  eyebrow: "The new role of Chief AI Officer [CAIO, AI Director]",
+  headline: "Transforming the organization to meet the challenges of AI.",
+  subheadline: "The risk is not moving too slowly. It is moving blindly.",
+  leadBlocks: [
+    {
+      type: "p",
+      text: "Not simply an expert. Not an evangelist. Not a generic “innovation” profile.",
+    },
+    { type: "p", text: "A leader able to:" },
+    {
+      type: "ul",
+      items: [
+        "arbitrate under pressure,",
+        "hold a difficult executive committee when interests diverge,",
+        "absorb internal resistance,",
+        "maintain clarity in the noise,",
+        "and transform the organization while its reference points shift.",
+      ],
+    },
+    {
+      type: "p",
+      text: "In our experience, leaders who have already transformed under constraint—and who hold a clear view of AI—are best placed to succeed without breaking the organization. At this level, the issue is not only the tool. It is judgment.",
+    },
+  ],
   sections: [
     {
       subtitle: "Urgency and fear of missing out: FOMO",
@@ -444,59 +438,6 @@ const en: CaiBundle = {
         {
           type: "p",
           text: "That decision-making solitude becomes a central issue.",
-        },
-      ],
-    },
-    {
-      subtitle: null,
-      blocks: [
-        {
-          type: "p",
-          text: "Many companies think they have an “AI problem.” They actually have an organizational problem. Roughly 30% of the value usually sits in tools. 70% in the organization.",
-        },
-        {
-          type: "p",
-          text: "When an organization talks only about tools, it is often avoiding a harder conversation.",
-        },
-        {
-          type: "p",
-          text: "We intervene when leaders understand the issue is no longer the tool. That is usually when, in often sensitive contexts, a mandate begins to address AI pressure.",
-        },
-        {
-          type: "ul",
-          items: [
-            "reduce noise around the topic,",
-            "clarify the mandate,",
-            "identify profiles able to hold the transformation,",
-            "secure sensitive hires.",
-          ],
-        },
-        {
-          type: "p",
-          text: "Not every manager or executive knows how to transform an organization under strain. With our experience, we have developed an ad hoc approach and a precise read of the profiles who can.",
-        },
-        {
-          type: "p",
-          text: "Not simply an expert. Not an evangelist. Not a generic “innovation” profile.",
-        },
-        { type: "p", text: "A leader able to:" },
-        {
-          type: "ul",
-          items: [
-            "arbitrate under pressure,",
-            "hold a difficult executive committee when interests diverge,",
-            "absorb internal resistance,",
-            "maintain clarity in the noise,",
-            "and transform the organization while its reference points shift.",
-          ],
-        },
-        {
-          type: "p",
-          text: "The risk is not moving too slowly. It is moving blindly.",
-        },
-        {
-          type: "p",
-          text: "That is why we look less at AI experts than at leaders who have already transformed under constraint—because at this level, the issue is no longer the tool. It is judgment.",
         },
       ],
     },

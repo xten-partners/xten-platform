@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { EditorialFadeIn } from "@/components/editorial-fade-in";
 import { HomeHero } from "@/components/home-hero";
+import { editorialImages } from "@/lib/editorial-images";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -27,6 +28,8 @@ export default async function LeCabinetPage({ params }: Props) {
     <div className="bg-background">
       <HomeHero
         variant="editorial"
+        backgroundImage={editorialImages.cabinetHero}
+        backgroundTreatment="hero"
         eyebrow={t("heroEyebrow")}
         titleMain={t("title")}
         quoteBody={t("heroQuote")}

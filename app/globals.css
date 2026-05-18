@@ -285,6 +285,39 @@
   .xten-cinematic-grade-band {
     @apply object-cover scale-[1.02] saturate-[0.88] brightness-[1.08] contrast-[1.01] sepia-0;
   }
+  .xten-cinematic-grade-night {
+    @apply object-cover scale-[1.04] saturate-[0.68] brightness-[0.86] contrast-[1.06] sepia-0;
+  }
+  .xten-cinematic-mandate-overlay {
+    background:
+      linear-gradient(
+        108deg,
+        oklch(0.11 0.014 265 / 0.92) 0%,
+        oklch(0.13 0.012 265 / 0.78) 34%,
+        oklch(0.15 0.01 265 / 0.42) 58%,
+        oklch(0.13 0.012 265 / 0.62) 100%
+      ),
+      linear-gradient(
+        180deg,
+        oklch(0.1 0.012 265 / 0.55) 0%,
+        transparent 38%,
+        oklch(0.1 0.012 265 / 0.72) 100%
+      );
+  }
+  .xten-cinematic-grain {
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.045;
+    mix-blend-mode: overlay;
+  }
+  .xten-cinematic-vignette {
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse 88% 78% at 50% 46%,
+      transparent 42%,
+      oklch(0.1 0.014 265 / 0.55) 100%
+    );
+  }
   .xten-cinematic-overlay-hero {
     background: linear-gradient(
       180deg,
@@ -330,12 +363,31 @@
       transparent 76%
     );
   }
+  .xten-hero-content-zone--center {
+    @apply mx-auto max-w-[36rem] text-center;
+  }
+  .xten-hero-content-zone--center::before {
+    right: -12%;
+    left: -12%;
+    background: radial-gradient(
+      ellipse 88% 80% at 50% 42%,
+      oklch(0.17 0.014 265 / 0.38) 0%,
+      oklch(0.17 0.014 265 / 0.14) 48%,
+      transparent 74%
+    );
+  }
   @media (min-width: 640px) {
     .xten-hero-content-zone::before {
       top: -2rem;
       right: -14%;
       bottom: -3rem;
       left: -2rem;
+    }
+    .xten-hero-content-zone--center::before {
+      top: -2rem;
+      right: -14%;
+      bottom: -2.5rem;
+      left: -14%;
     }
   }
   .xten-hero-text-on-image {
