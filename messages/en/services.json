@@ -106,18 +106,32 @@
         "body": "Monthly, due at the start of the month."
       }
     ],
-    "s04Quote": "“Where trade-offs become public — and lasting.”",
-    "s04Title": "04 — Board & Governance Participation",
-    "s04Scope": "Board or strategic committee participation: framing of AI and transformation stakes, vigilance on trade-offs, targeted input without substituting for executive management.",
-    "s04Duration": "Mandate aligned with the board calendar — typically 12 to 36 months.",
-    "s04PricingLead": "Fees calibrated to scope (independent director, committee advisor, time-bound mandate).",
-    "s04PricingRows": [
-      { "label": "Board / committee participation (framed mandate)", "value": "on proposal" },
-      { "label": "Session prep or specific workstreams", "value": "fixed fee or day rate" }
+    "s04SectionEyebrow": "04 — Xten Services",
+    "s04Quote": "",
+    "s04Title": "Board & Governance Participation",
+    "s04Scope": "You want to integrate AI-related stakes at the highest level of the organization — board, governance, strategic committee, or executive leadership — without reducing the subject to a purely technological question.\n\nWe participate in select boards, advisory boards, and governance forums facing sensitive organizational transformations driven by AI.\n\nAn external, operational, expert, and independent perspective on:\n— structuring AI responsibilities,\n— trade-offs between innovation, control, and execution,\n— organizational impacts of technology decisions,\n— evolutions in governance and leadership,\n— risks of fragmentation, paralysis, or misallocation of resources.",
+    "s04DetailSections": [
+      {
+        "title": "Framing and vigilance at the highest level",
+        "body": "Support for executives, boards, and shareholders: framing of AI and transformation stakes, vigilance on trade-offs, targeted input to reflection without substituting for executive management."
+      },
+      {
+        "title": "Indicative duration",
+        "body": "Mandate aligned with the organization’s calendar — typically 12 to 36 months."
+      },
+      {
+        "title": "Format",
+        "body": "Clear mandate letter, NDA, independence and conflict disclosures, preparation and participation in committees."
+      },
+      {
+        "title": "Fixed fee",
+        "body": "Preparation and participation: to be agreed"
+      },
+      {
+        "title": "Payment",
+        "body": "Per mandate: annual, quarterly, or milestones tied to meetings."
+      }
     ],
-    "s04Mechanics": "Clear mandate letter, independence and conflict disclosures, rhythm aligned with the board calendar.",
-    "s04Guarantee": "No ambiguous dual role: scope, transparency, and professional standards are explicit.",
-    "s04Payment": "Per mandate: annual, quarterly, or milestones tied to meetings.",
     "labels": {
       "scope": "Scope",
       "duration": "Indicative duration",

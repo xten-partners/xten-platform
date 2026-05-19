@@ -28,7 +28,7 @@ export function HomeEditorial() {
                 { title: "service01Title", body: "service01Body", href: "/services#service-01" },
                 { title: "service02Title", body: "service02Body", href: "/services#service-02" },
                 { title: "service03Title", body: "service03Body", href: "/services#service-03" },
-                { title: "service04Title", body: "service04Body", href: "/services" },
+                { title: "service04Title", body: "service04Body", href: "/services#service-04" },
               ].map((s, i) => (
                 <div
                   key={s.title}

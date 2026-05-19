@@ -65,6 +65,7 @@ export default async function ServicesPage({ params }: Props) {
   const s01DetailSections = t.raw("s01DetailSections") as ServiceDetailBlock[];
   const s02DetailSections = t.raw("s02DetailSections") as ServiceDetailBlock[];
   const s03DetailSections = t.raw("s03DetailSections") as ServiceDetailBlock[];
+  const s04DetailSections = t.raw("s04DetailSections") as ServiceDetailBlock[];
 
   const blocks: ServiceBlockData[] = [
     {
@@ -104,12 +105,12 @@ export default async function ServicesPage({ params }: Props) {
       quote: t("s04Quote"),
       title: t("s04Title"),
       scope: t("s04Scope"),
-      duration: t("s04Duration"),
-      pricingLead: t("s04PricingLead"),
-      rows: t.raw("s04PricingRows") as ServicePricingRow[],
-      mechanics: t("s04Mechanics"),
-      guarantee: t("s04Guarantee"),
-      payment: t("s04Payment"),
+      duration: "",
+      pricingLead: "",
+      rows: [],
+      mechanics: "",
+      guarantee: "",
+      payment: "",
     },
   ];
 
@@ -139,7 +140,7 @@ export default async function ServicesPage({ params }: Props) {
                 ? t("s02SectionEyebrow")
                 : index === 2
                   ? t("s03SectionEyebrow")
-                  : String(index + 1).padStart(2, "0")
+                  : t("s04SectionEyebrow")
           }
           quote={block.quote}
           title={block.title}
@@ -150,8 +151,8 @@ export default async function ServicesPage({ params }: Props) {
           pricingRows={block.rows}
           ctaLabel={ctaLabel}
           muted={index % 2 === 0}
-          introAsBlockquote={index === 0 || index === 1 || index === 2}
-          splitLayout={index === 0 || index === 1 || index === 2}
+          introAsBlockquote={index === 0 || index === 1 || index === 2 || index === 3}
+          splitLayout={index === 0 || index === 1 || index === 2 || index === 3}
           detailSections={
             index === 0
               ? s01DetailSections
@@ -159,7 +160,9 @@ export default async function ServicesPage({ params }: Props) {
                 ? s02DetailSections
                 : index === 2
                   ? s03DetailSections
-                  : undefined
+                  : index === 3
+                    ? s04DetailSections
+                    : undefined
           }
         />
       ))}

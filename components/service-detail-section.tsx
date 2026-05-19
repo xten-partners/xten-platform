@@ -47,13 +47,48 @@ const BLOCKQUOTE_TEXT =
 
 const BLOCKQUOTE_WRAP = "border-l-2 border-foreground/12 pl-6 sm:pl-8";
 
+function IntroBlockquoteParagraph({
+  paragraph,
+  className,
+}: {
+  paragraph: string;
+  className?: string;
+}) {
+  const lines = paragraph.split("\n").map((line) => line.trim()).filter(Boolean);
+  const hasBulletLines =
+    lines.length > 1 && lines.slice(1).every((line) => /^[—\-]\s/.test(line));
+
+  if (hasBulletLines) {
+    return (
+      <div className={className}>
+        <p className={BLOCKQUOTE_TEXT}>{lines[0]}</p>
+        <ul className="mt-3 list-none space-y-2.5 sm:mt-4">
+          {lines.slice(1).map((line) => (
+            <li key={line} className={cn("flex gap-3", BLOCKQUOTE_TEXT)}>
+              <span
+                className="mt-[0.55em] h-px w-3 shrink-0 bg-foreground/35"
+                aria-hidden
+              />
+              <span>{line.replace(/^[—\-]\s*/, "")}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  return <p className={cn(BLOCKQUOTE_TEXT, className)}>{paragraph}</p>;
+}
+
 function IntroBlockquote({ intro }: { intro: string }) {
   return (
     <blockquote className={BLOCKQUOTE_WRAP}>
       {intro.split(/\n\n+/).map((paragraph, i) => (
-        <p key={paragraph.slice(0, 48)} className={cn(BLOCKQUOTE_TEXT, i > 0 && "mt-5 sm:mt-6")}>
-          {paragraph}
-        </p>
+        <IntroBlockquoteParagraph
+          key={paragraph.slice(0, 48)}
+          paragraph={paragraph}
+          className={i > 0 ? "mt-5 sm:mt-6" : undefined}
+        />
       ))}
     </blockquote>
   );

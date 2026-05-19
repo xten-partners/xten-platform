@@ -106,18 +106,32 @@
         "body": "Mensuel, échéance début de mois."
       }
     ],
-    "s04Quote": "« Au niveau où l’arbitrage devient public — et durable. »",
-    "s04Title": "04 — Board & Governance Participation",
-    "s04Scope": "Participation en conseil ou comités stratégiques : cadrage des enjeux IA et transformation, vigilance sur les arbitrages, apports ciblés sans ingérence dans la direction exécutive.",
-    "s04Duration": "Mandat aligné sur le calendrier du conseil — typiquement 12 à 36 mois.",
-    "s04PricingLead": "Honoraires calibrés au périmètre (membre indépendant, expert de comité, mandat ponctuel).",
-    "s04PricingRows": [
-      { "label": "Participation conseil / comité (mandat cadré)", "value": "sur devis" },
-      { "label": "Préparation de sessions ou dossiers spécifiques", "value": "forfait ou journalier" }
+    "s04SectionEyebrow": "04 — Xten Services",
+    "s04Quote": "",
+    "s04Title": "Board & Governance Participation",
+    "s04Scope": "Vous souhaitez intégrer les enjeux liés à l’IA au plus haut niveau de l’organisation — board, gouvernance, comité stratégique ou direction générale — sans réduire le sujet à une simple question technologique.\n\nNous participons à certains boards, advisory boards et réflexions de gouvernance confrontés à des transformations organisationnelles sensibles liées à l’IA.\n\nApport d’un regard externe, opérationnel, expert et indépendant sur :\n— la structuration des responsabilités IA,\n— les arbitrages entre innovation, contrôle et exécution,\n— les impacts organisationnels des décisions technologiques,\n— les évolutions de gouvernance et de leadership,\n— les risques de fragmentation, de paralysie ou de mauvaise allocation des ressources.",
+    "s04DetailSections": [
+      {
+        "title": "Cadre et vigilance au plus haut niveau",
+        "body": "Intervention en appui des dirigeants, conseils et actionnaires : cadrage des enjeux IA et transformation, vigilance sur les arbitrages, apports ciblés à la réflexion sans ingérence dans la direction exécutive."
+      },
+      {
+        "title": "Durée indicative",
+        "body": "Mandat aligné sur le calendrier de l’organisation — typiquement 12 à 36 mois."
+      },
+      {
+        "title": "Format",
+        "body": "Lettre de mission claire, NDA, déclarations d’indépendance et de conflits d’intérêts, préparation et participation aux comités."
+      },
+      {
+        "title": "Honoraire forfaitaire",
+        "body": "Préparation et participation : à convenir"
+      },
+      {
+        "title": "Paiement",
+        "body": "Selon mandat : annuel, trimestriel ou jalons aux séances."
+      }
     ],
-    "s04Mechanics": "Lettre de mission claire, déclarations d’indépendance et de conflits d’intérêts, rythme aligné sur le calendrier du conseil.",
-    "s04Guarantee": "Pas de double rôle ambigu : périmètre, transparence et déontologie assumés.",
-    "s04Payment": "Selon mandat : annuel, trimestriel ou jalons aux séances.",
     "labels": {
       "scope": "Périmètre",
       "duration": "Durée indicative",
