@@ -8,42 +8,104 @@
     "metaDescription": "Discreet commercial frame: diagnostics, retained executive search, executive sparring, board and governance participation.",
     "title": "Services",
     "lede": "Useful transparency — without a brochure. Figures are orders of magnitude; final framing is set at mandate.",
-    "s01Quote": "“Before the tool: the map of power and pace.”",
-    "s01Title": "01 — Strategic Diagnostic",
-    "s01Scope": "Short mapping of the implicit mandate: decisions, ownership of change, human bottlenecks, public exposure. Sober outputs: executive summary and recommended trade-offs — not a slide deck.",
-    "s01Duration": "3 to 5 weeks depending on access and scope.",
-    "s01PricingLead": "Fixed fees, calibrated to scope.",
-    "s01PricingRows": [
-      { "label": "Executive / single BU scope", "value": "from €28,000 excl. tax" },
-      { "label": "Multi-BU group or limited international", "value": "on proposal" }
+    "sectionCta": "Start a conversation",
+    "s01SectionEyebrow": "01 — Xten Services",
+    "s01Quote": "",
+    "s01Title": "Strategic Diagnostic",
+    "s01Scope": "You are facing an AI transformation whose stakes go far beyond the technical scope. Before identifying the right person, we work with you to clarify the exact nature of the transformation to lead, the organizational trade-offs it implies, and the complementary investments essential to its success: governance, data, processes, tools, training, acculturation, hiring, change management, security, compliance, and new steering models.\n\nWe then define the precise mandate of the leader capable of carrying this transformation — whether already inside the organization or to be identified externally.",
+    "s01DetailSections": [
+      {
+        "title": "Diagnostic",
+        "items": [
+          "Internal interviews (CEO, COO, CHRO, 2–3 sponsors/sceptics)",
+          "Objectives of the expected AI transformation",
+          "Mapping of stakes and human risks",
+          "Analysis of ongoing AI initiatives and their blockers",
+          "Definition of the precise mandate for the leader who will carry the transformation",
+          "Recommendations: target profiles and packages, other elements useful to success"
+        ]
+      },
+      {
+        "title": "Deliverable",
+        "body": "8–15 page strategic note including detailed target profile + search mandate"
+      },
+      {
+        "title": "Indicative duration",
+        "body": "3 to 5 weeks depending on scope and access."
+      },
+      {
+        "title": "Fixed fee",
+        "body": "€10–20K excl. tax depending on mission intensity."
+      },
+      {
+        "title": "Payment",
+        "body": "100% upfront on engagement."
+      }
     ],
-    "s01Mechanics": "Targeted interviews, selective document review, debrief in an executive session.",
-    "s01Guarantee": "No promise of an “AI roadmap”. Commitment to clarity: what is workable, under what ownership, at what horizon.",
-    "s01Payment": "40% on engagement, balance on delivery.",
-    "s02Quote": "“The mandate before the long list.”",
-    "s02Title": "02 — Executive Search Retained",
-    "s02Scope": "Operational role definition, evaluation criteria, targeted market, confidential approach, qualified shortlist, support through final arbitration.",
-    "s02Duration": "12 to 20 weeks depending on level and market.",
-    "s02PricingLead": "Minority success fees; majority fixed base.",
-    "s02PricingRows": [
-      { "label": "Mission fee (non-refundable retainer)", "value": "from €45,000 excl. tax" },
-      { "label": "Success at start date", "value": "tied to target compensation — scale in mandate letter" }
+    "s02SectionEyebrow": "02 — Xten Services",
+    "s02Quote": "",
+    "s02Title": "Executive Search Retained",
+    "s02Scope": "You want to recruit a leader capable of carrying your organization’s critical transformations driven by AI.\n\nWe identify, assess, and present a reasoned shortlist of 3 to 5 candidates able to lead your AI transformation in your specific context.\n\nApproach: absolute confidentiality, operator-level judgment, structured recommendation, continuous support.",
+    "s02DetailSections": [
+      {
+        "title": "Exclusive mandate",
+        "items": [
+          "In-depth framing",
+          "Target package estimation",
+          "Market mapping",
+          "Targeted direct approach",
+          "In-depth assessment (5-dimension framework + test)",
+          "Shortlist of 3–5 candidates",
+          "Decision support and closing",
+          "Reference checks",
+          "6-month integration follow-up with coaching component"
+        ]
+      },
+      {
+        "title": "Indicative duration",
+        "body": "12–20 weeks from signing to placement"
+      },
+      {
+        "title": "Fees",
+        "body": "30% of total annual package (fixed + target variable + annualized long-term incentives) with a floor of €30K excl. tax"
+      },
+      {
+        "title": "Payment",
+        "rows": [
+          { "label": "Engagement", "value": "33%", "detail": "Mandate signing" },
+          { "label": "Shortlist", "value": "33%", "detail": "Shortlist presentation (weeks 6–10)" },
+          { "label": "Closing", "value": "34%", "detail": "Candidate contract signing" }
+        ]
+      }
     ],
-    "s02Mechanics": "Exclusive retained search on the defined scope; no parallel chase on the same mandate.",
-    "s02Guarantee": "Limited-time replacement guarantee — written conditions in contract.",
-    "s02Payment": "Retainer at opening, milestones, balance at start date.",
-    "s03Quote": "“A space to decide without an audience.”",
-    "s03Title": "03 — Transition Partner",
-    "s03Scope": "Tight sessions with the top: trade-offs, blind spots, political tempo, preparation for sensitive decisions. Not generic “performance coaching”.",
-    "s03Duration": "6 to 12 months, monthly or bi-monthly rhythm.",
-    "s03PricingLead": "Monthly fixed subscription.",
-    "s03PricingRows": [
-      { "label": "Standard mandate (1 executive)", "value": "€8,000–12,000 excl. tax / month" },
-      { "label": "Extended mandate (small committee)", "value": "on proposal" }
+    "s03SectionEyebrow": "03 — Xten Services",
+    "s03Quote": "",
+    "s03Title": "Transition Partner",
+    "s03Scope": "You do not want to appoint or recruit a CAIO too early — and the role is still somewhat undefined anyway. CAIO, AI Director, CIO+, COO+?\n\nThe risk is not moving too slowly. It is moving forward blindly.\n\nMore than a sparring partner but less than an operating executive, we act as an external expert in complex, sensitive contexts where AI becomes a matter of leadership, governance, and organizational transformation.\n\nDiscernment, trade-offs, clarity.",
+    "s03DetailSections": [
+      {
+        "title": "Preparing sensitive decisions",
+        "items": [
+          "One 60–90 min video call per month, one-to-one or with a small committee",
+          "Sparring on AI transformation topics (use cases, hiring, organization)",
+          "Market reading and ad hoc competitive intelligence",
+          "Asynchronous availability (response within 48h on ad hoc questions)",
+          "Contractual confidentiality"
+        ]
+      },
+      {
+        "title": "Format",
+        "body": "Fixed agenda, controlled duration, contractual confidentiality"
+      },
+      {
+        "title": "Fixed fee",
+        "body": "€5–10K excl. tax per month depending on intensity, renewable annual contract"
+      },
+      {
+        "title": "Payment",
+        "body": "Monthly, due at the start of the month."
+      }
     ],
-    "s03Mechanics": "Fixed agenda, controlled duration, contractual confidentiality.",
-    "s03Guarantee": "No decorative deliverables: decisions and watchpoints documented only if useful to the client.",
-    "s03Payment": "Monthly, due end of month.",
     "s04Quote": "“Where trade-offs become public — and lasting.”",
     "s04Title": "04 — Board & Governance Participation",
     "s04Scope": "Board or strategic committee participation: framing of AI and transformation stakes, vigilance on trade-offs, targeted input without substituting for executive management.",
