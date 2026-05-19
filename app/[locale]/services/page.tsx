@@ -123,6 +123,7 @@ export default async function ServicesPage({ params }: Props) {
         variant="editorial"
         backgroundImage={editorialImages.servicesHero}
         backgroundTreatment="hero"
+        enhancedMobileContrast
         eyebrow={t("heroEyebrow")}
         titleMain={t("heroTitleMain")}
         subtextItalic={t("heroSubtextQuote")}

@@ -395,6 +395,55 @@
       0 1px 2px oklch(0.15 0.014 265 / 0.32),
       0 6px 28px oklch(0.15 0.014 265 / 0.24);
   }
+  /* Services hero — lisibilité mobile sans toucher au desktop */
+  @media (max-width: 639px) {
+    .xten-hero--mobile-readable .xten-hero-overlay-horizontal {
+      background: linear-gradient(
+        90deg,
+        oklch(0.14 0.014 265 / 0.74) 0%,
+        oklch(0.15 0.014 265 / 0.58) 42%,
+        oklch(0.16 0.014 265 / 0.32) 70%,
+        oklch(0.17 0.014 265 / 0.1) 100%
+      );
+    }
+    .xten-hero--mobile-readable .xten-hero-overlay-vertical {
+      background: linear-gradient(
+        180deg,
+        oklch(0.14 0.014 265 / 0.38) 0%,
+        oklch(0.15 0.014 265 / 0.24) 42%,
+        oklch(0.16 0.014 265 / 0.42) 100%
+      );
+    }
+    .xten-hero--mobile-readable .xten-hero-content-zone::before {
+      top: -1.5rem;
+      right: -22%;
+      bottom: -2.75rem;
+      left: -1.25rem;
+      background: radial-gradient(
+        ellipse 100% 90% at 6% 36%,
+        oklch(0.13 0.014 265 / 0.68) 0%,
+        oklch(0.14 0.014 265 / 0.42) 48%,
+        transparent 80%
+      );
+    }
+    .xten-hero--mobile-readable .xten-eyebrow-on-image {
+      color: oklch(0.98 0.004 265 / 0.98);
+      text-shadow: 0 1px 18px oklch(0.12 0.014 265 / 0.55);
+    }
+    .xten-hero--mobile-readable .xten-hero-readable-quote {
+      text-shadow:
+        0 1px 3px oklch(0.12 0.014 265 / 0.5),
+        0 8px 36px oklch(0.12 0.014 265 / 0.4);
+    }
+    .xten-hero--mobile-readable .xten-display-title-sub {
+      color: oklch(0.98 0.004 265 / 0.96);
+    }
+    .xten-hero--mobile-readable .xten-hero-text-on-image {
+      text-shadow:
+        0 1px 3px oklch(0.12 0.014 265 / 0.48),
+        0 8px 32px oklch(0.12 0.014 265 / 0.38);
+    }
+  }
   .xten-hero-search-on-image {
     box-shadow:
       0 2px 16px oklch(0.17 0.014 265 / 0.12),

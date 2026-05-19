@@ -89,6 +89,8 @@ type HomeHeroProps = {
   backgroundTreatment?: "hero" | "mandate";
   /** Homepage: statement lives in the section below the hero */
   omitSubtext?: boolean;
+  /** Stronger scrim and text contrast on small screens (e.g. Services hero) */
+  enhancedMobileContrast?: boolean;
 };
 
 export function HomeHero({
@@ -105,6 +107,7 @@ export function HomeHero({
   backgroundImage,
   backgroundTreatment = "hero",
   omitSubtext = false,
+  enhancedMobileContrast = false,
 }: HomeHeroProps) {
   const t = useTranslations("Home");
   const eyebrowText = eyebrow ?? t("heroEyebrow");
@@ -118,14 +121,25 @@ export function HomeHero({
   const hasImageBackground = Boolean(backgroundImage);
   const isOnImage = isCinematic || hasImageBackground;
   const isMandateBackground = hasImageBackground && backgroundTreatment === "mandate";
+  const mobileReadable = enhancedMobileContrast && isOnImage;
 
   const bodyClass = isOnImage
-    ? "text-sm font-light leading-[1.85] text-ivory/78 sm:text-base sm:leading-[1.8]"
+    ? mobileReadable
+      ? "text-sm font-light leading-[1.85] text-ivory/95 sm:text-base sm:leading-[1.8] sm:text-ivory/78"
+      : "text-sm font-light leading-[1.85] text-ivory/78 sm:text-base sm:leading-[1.8]"
     : "text-sm font-light leading-[1.85] text-muted-foreground sm:text-base sm:leading-[1.8]";
 
   const quoteBorder = isOnImage ? "border-ivory/20" : "border-foreground/12";
-  const quoteText = isOnImage ? "text-ivory/78" : "text-muted-foreground";
-  const quoteAttr = isOnImage ? "text-ivory/55" : "text-muted-foreground";
+  const quoteText = isOnImage
+    ? mobileReadable
+      ? "text-ivory/95 sm:text-ivory/78 xten-hero-readable-quote"
+      : "text-ivory/78"
+    : "text-muted-foreground";
+  const quoteAttr = isOnImage
+    ? mobileReadable
+      ? "text-ivory/80 sm:text-ivory/55"
+      : "text-ivory/55"
+    : "text-muted-foreground";
 
   const content = (
     <EditorialFadeIn>
@@ -185,6 +199,7 @@ export function HomeHero({
       className={cn(
         "relative overflow-hidden border-b",
         isMandateBackground ? "min-h-[85vh] border-ivory/8 sm:min-h-[90vh]" : "min-h-[100svh]",
+        mobileReadable && "xten-hero--mobile-readable",
       )}
     >
       <CinematicImage
