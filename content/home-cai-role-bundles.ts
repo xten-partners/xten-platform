@@ -16,7 +16,7 @@ export type CaiBundle = {
 };
 
 const fr: CaiBundle = {
-  eyebrow: "Le nouveau rôle de Chief AI Officer [CAIO, Directeur IA, DIA]",
+  eyebrow: "Le nouveau rôle de Chief AI Officer [CAIO, Directeur IA, CIO+, COO+]",
   headline: "Transformer l’organisation pour relever les défis de l’IA.",
   subheadline:
     "Le risque n’est pas d’avancer trop lentement. C’est d’avancer aveuglément.",
@@ -228,7 +228,7 @@ const fr: CaiBundle = {
 };
 
 const en: CaiBundle = {
-  eyebrow: "The new role of Chief AI Officer [CAIO, AI Director]",
+  eyebrow: "The new role of Chief AI Officer [CAIO, AI Director, CIO+, COO+]",
   headline: "Transforming the organization to meet the challenges of AI.",
   subheadline: "The risk is not moving too slowly. It is moving blindly.",
   leadBlocks: [
